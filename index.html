@@ -8,53 +8,86 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/responsive.css">
 </head>
 
 <body>
     <header class="custom-header bg-white shadow-sm">
-        <nav class="navbar navbar-expand-lg py-0">
-            <div class="cg-container navbar-nav flex-row justify-content-between align-items-center w-100">
+        <nav class="navbar navbar-expand-xl py-0">
+            <div class="cg-container navbar-nav flex-row gap-2 align-items-center w-100">
                 <!-- Logo -->
                 <a class="navbar-brand me-0" href="#">
                     <img src="media-images/logo.svg" alt="Crown Globe" height="40"
                         class="d-inline-block align-text-top">
                 </a>
+                <div class="d-flex gap-xl-5 gap-3 align-items-center justify-content-end w-100">
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <!-- Mobile Toggle -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                        <div class="mobile-menu-header d-xl-none">
+                            <a href="#"><img src="media-images/logo.svg" alt="Crown Globe" height="40"></a>
+                            <button class="navbar-toggler close-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navContent">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <ul class="navbar-nav gap-xl-4 gap-1">
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bookkeeping</a></li>
+                                    <li><a class="dropdown-item" href="#">Financial Statement Preparation</a></li>
+                                    <li><a class="dropdown-item" href="#">Payroll Processing</a></li>
+                                    <li><a class="dropdown-item" href="#">Offshore Staffing</a></li>
+                                    <li><a class="dropdown-item" href="#">USA CPA/Accounting Firm</a></li>
+                                    <li><a class="dropdown-item" href="#">Taxes</a></li>
+                                    <li><a class="dropdown-item" href="#">Multistate Sales Tax Filing</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Industries</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Dental</a></li>
+                                    <li><a class="dropdown-item" href="#">Franchise</a></li>
+                                    <li><a class="dropdown-item" href="#">Liquor Store</a></li>
+                                    <li><a class="dropdown-item" href="#">Gas Station</a></li>
+                                    <li><a class="dropdown-item" href="#">Hotel</a></li>
+                                    <li><a class="dropdown-item" href="#">IT & AI</a></li>
+                                    <li><a class="dropdown-item" href="#">Real Estate</a></li>
+                                    <li><a class="dropdown-item" href="#">Restaurant</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Resources</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="d-xl-none my-3 w-100 px-3">
+                            <a href="#" class="common-btn py-3 px-4 w-100 text-center">Get Free Quote</a>
+                        </div>
+                    </div>
 
-                <!-- Navigation Links -->
-                <div class="collapse navbar-collapse justify-content-center" id="navContent">
-                    <ul class="navbar-nav gap-lg-4">
-                        <li class="nav-item ">
-                            <a class="nav-link active" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Industries</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Call to Action -->
-                <div class="d-none d-lg-block">
-                    <a href="#" class="common-btn py-3 px-4">Get Free Quote</a>
+                    <!-- Call to Action -->
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="common-btn py-3 px-4">Get Free Quote</a>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -75,13 +108,350 @@
                     <a href="#" class="common-btn">Book Consultation</a>
                 </div>
                 <div class="hero-image">
-                    <img src="./media-images/hero-banner-image.png" alt="Hero Image">
+                    <img src="./media-images/hero-section-banner.png" alt="Hero Image">
                 </div>
             </div>
         </div>
     </section>
+    <!-- About Service -->
+    <section class="about-service py-100">
+        <div class="cg-container">
+            <div class="about-service-grid">
+                <div class="about-service-image">
+                    <img src="./media-images/About-service.png" alt="About Service">
+                </div>
+                <div class="about-service-details">
+                    <h3>the leading accounting services company</h3>
+                    <p>Our bookkeeping and accounting services deliver the valuable perk of owning an accountant without
+                        any in-house fees of accountants.</p>
+                    <p>With our accounting services, you can access a team of skilled and knowledgeable accountants who
+                        work tirelessly to ensure your financial records are always up-to-date and accurate.</p>
+                    <p>Gone are those days when one had to deal with the high-priced fees of financial controllers.</p>
+                    <p>Our accounting services are affordable and cost effective, allowing small businesses to access
+                        top-notch financial management services without breaking the bank.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Services -->
+    <section class="our-services common-bg py-100">
+        <div class="cg-container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive accounting solutions designed to help your business thrive.</p>
+            </div>
+            <div class="our-services-grid">
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-1.svg" alt="services">
+                    </span>
+                    <h4>Financial Statement Preparation</h4>
+                    <p>Accurate financial records maintained daily. Stay organized and audit-ready.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-2.svg" alt="services">
+                    </span>
+                    <h4>Payroll Processing</h4>
+                    <p>Timely, compliant payroll for your team. Automated calculations and filings.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-3.svg" alt="services">
+                    </span>
+                    <h4>Multistate Sales Tax Filling</h4>
+                    <p>Navigate complex multi-state tax obligations with expert guidance.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-4.svg" alt="services">
+                    </span>
+                    <h4>Remote Accounting</h4>
+                    <p>Full-service accounting from anywhere. Cloud-based, real-time access.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-5.svg" alt="services">
+                    </span>
+                    <h4>Business Tax Filling</h4>
+                    <p>Maximize deductions and ensure compliance with professional tax preparation.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-6.svg" alt="services">
+                    </span>
+                    <h4>CFO Advisory</h4>
+                    <p>Strategic financial planning and insights to drive business growth.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-1.svg" alt="services">
+                    </span>
+                    <h4>Financial Statement Preparation</h4>
+                    <p>Accurate financial records maintained daily. Stay organized and audit-ready.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-2.svg" alt="services">
+                    </span>
+                    <h4>Payroll Processing</h4>
+                    <p>Timely, compliant payroll for your team. Automated calculations and filings.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-3.svg" alt="services">
+                    </span>
+                    <h4>Multistate Sales Tax Filling</h4>
+                    <p>Navigate complex multi-state tax obligations with expert guidance.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-4.svg" alt="services">
+                    </span>
+                    <h4>Remote Accounting</h4>
+                    <p>Full-service accounting from anywhere. Cloud-based, real-time access.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-5.svg" alt="services">
+                    </span>
+                    <h4>Business Tax Filling</h4>
+                    <p>Maximize deductions and ensure compliance with professional tax preparation.</p>
+                </div>
+                <div class="our-service-card">
+                    <span>
+                        <img src="./media-images/our-services-6.svg" alt="services">
+                    </span>
+                    <h4>CFO Advisory</h4>
+                    <p>Strategic financial planning and insights to drive business growth.</p>
+                </div>
+            </div>
+            <div class="view-all-btn">
+                <a href="./services.html" class="common-btn">View All</a>
+            </div>
+        </div>
+    </section>
+    <!-- Industries We Serve -->
+    <section class="industries-we-serve py-100">
+        <div class="cg-container">
+            <div class="section-header">
+                <h2>Industries We Serve</h2>
+                <p>Specialized accounting expertise across diverse business sectors.</p>
+            </div>
+            <div class="industries-we-serve-grid">
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-1.svg" alt="industry">
+                    </span>
+                    <h4>Dental</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-2.svg" alt="industry">
+                    </span>
+                    <h4>Franchise</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-3.svg" alt="industry">
+                    </span>
+                    <h4>Liquor Store</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-4.svg" alt="industry">
+                    </span>
+                    <h4>Gas Station</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-5.svg" alt="industry">
+                    </span>
+                    <h4>Hotel</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-6.svg" alt="industry">
+                    </span>
+                    <h4>IT & AI</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-7.svg" alt="industry">
+                    </span>
+                    <h4>Real Estate</h4>
+                </div>
+                <div class="industry-card">
+                    <span>
+                        <img src="./media-images/Industries-8.svg" alt="industry">
+                    </span>
+                    <h4>Restaurant</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Insights -->
+    <section class="latest-insights common-bg py-100">
+        <div class="cg-container">
+            <div class="section-header">
+                <h2>Latest Insights</h2>
+                <p>Stay informed with expert financial tips and industry updates.</p>
+            </div>
+            <div class="latest-insights-grid">
+                <div class="latest-insight-card">
+                    <img src="./media-images/Latest-Insights-1.png" alt="latest-insight">
+                    <div class="latest-insight-card-details">
+                        <span>Tax Planning</span>
+                        <h4>5 Tax Strategies Every Small Business Should Know</h4>
+                        <p>Discover proven strategies to minimize your tax burden and maximize deductions this fiscal
+                            year.
+                        </p>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-insight-card">
+                    <img src="./media-images/Latest-Insights-2.png" alt="latest-insight">
+                    <div class="latest-insight-card-details">
+                        <span>Tax Planning</span>
+                        <h4>5 Tax Strategies Every Small Business Should Know</h4>
+                        <p>Discover proven strategies to minimize your tax burden and maximize deductions this fiscal
+                            year.
+                        </p>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="latest-insight-card">
+                    <img src="./media-images/Latest-Insights-3.png" alt="latest-insight">
+                    <div class="latest-insight-card-details">
+                        <span>Tax Planning</span>
+                        <h4>5 Tax Strategies Every Small Business Should Know</h4>
+                        <p>Discover proven strategies to minimize your tax burden and maximize deductions this fiscal
+                            year.
+                        </p>
+                        <div class="read-more">
+                            <a href="">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Book Free Consultation -->
+    <section class="book-free-consultation py-100">
+        <div class="cg-container">
+            <div class="book-free-consultation-grid">
+                <div class="book-free-consultation-details">
+                    <h2>Ready to Simplify Your Accounting?</h2>
+                    <p>Let our experts handle your finances so you can focus on what matters most<br /> — growing your
+                        business.</p>
+                    <a href="" class="common-btn-white">Book Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Get Started Today -->
+    <section class="py-100 get-started-today">
+        <div class="cg-container">
+            <div class="get-started-today-details">
+                <span><img src="./media-images/guard-icon.svg" alt="guard-icon"></span>
+                <h2>100% Satisfaction Guaranteed</h2>
+                <p>We stand behind our work. If you're not completely satisfied with our services,<br />
+                    we'll make it right no questions asked.</p>
+                <a href="" class="common-btn">Get Started Today</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="cg-container">
+            <div class="footer-grid pb-100">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Why CrownGlobe</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Benefits of Outsourcing</a></li>
+                        <li><a href="#">Engagement Models</a></li>
+                        <li><a href="#">Our Key Differentiators</a></li>
+                        <li><a href="#">Transition Process</a></li>
+                        <li><a href="#">Client Login</a></li>
+                        <li><a href="#">Information Security</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Bookkeeping</a></li>
+                        <li><a href="#">Financial Statement Preparation</a></li>
+                        <li><a href="#">Payroll Processing</a></li>
+                        <li><a href="#">Offshore Staffing</a></li>
+                        <li><a href="#">USA CPA/Accounting Firm</a></li>
+                        <li><a href="#">Taxes</a></li>
+                        <li><a href="#">Multistate Sales Tax Filing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Download Brochures</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <div class="contact-info">
+                        <h4>Get in Touch</h4>
+                        <ul>
+                            <li>
+                                <img src="./media-images/phone-icon.svg" alt="phone">
+                                <a href="tel:8482484300">(848) 248-4300</a>
+                            </li>
+                            <li>
+                                <img src="./media-images/mail-icon.svg" alt="mail">
+                                <a href="mailto:info@crownglobe.com">info@crownglobe.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-links mt-4">
+                        <h4>Follow us on</h4>
+                        <div class="social-icons d-flex gap-3 mt-3">
+                            <a href="#"><img src="./media-images/linkedin-icon.svg" alt="linkedin"></a>
+                            <a href="#"><img src="./media-images/google-icon.svg" alt="google"></a>
+                            <a href="#"><img src="./media-images/youtube-icon.svg" alt="youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #CCCCCC;" />
+        <div class="cg-container">
+            <div class="footer-bottom-grid">
+                <div class="copyright">
+                    <p>&copy; 2026 CrownGlobe. All rights reserved.</p>
+                </div>
+                <div class="terms-condition">
+                    <ul>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="design-by">
+                    <p>Designed & Developed by <a href="#">Softqube Technologies LLC</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="js/index.js"></script>
 </body>
+
 </html>
