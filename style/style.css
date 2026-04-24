@@ -216,6 +216,12 @@ a.common-btn-white:active {
   background-position: center;
   background-repeat: no-repeat;
 }
+.common-bg-gradient-light {
+  background: url("../images/common-bg-gradiant-light.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* Navbar Styling */
 .navbar-nav .nav-link {
   color: var(--black);
