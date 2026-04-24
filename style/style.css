@@ -227,50 +227,52 @@ a.common-btn-white:active {
 }
 /* ------------------- */
 /* Coman Hero area */
-.coman-hero-bg{
+.coman-hero-bg {
   height: 747px;
 }
-.row-grid{
+.row-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   grid-gap: 98px;
   padding: 115px 0;
 }
-.right-grid p{
+.right-grid p {
   margin: 20px 0 45px 0;
 }
 /* Engagement Modal Our Modal Section */
-.bluegredinentbg{
+.bluegredinentbg {
   border-radius: 20px;
-background: url(../images/bluegredinentbg.svg) no-repeat center center/cover;
+  background: url(../images/bluegredinentbg.svg) no-repeat center center/cover;
 }
 .engagementmodal h2 {
-    color: var(--white);
-    margin-bottom: 30px;
+  color: var(--white);
+  margin-bottom: 30px;
 }
 .engagementgrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 0 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 0 150px;
 }
 .engementbox {
-    border-radius: 10px;
-    background: var(--white);
-    padding: 20px;
-    box-shadow: 0 12.292px 18.438px -3.688px rgba(0, 0, 0, 0.10), 0 4.917px 7.375px -4.917px rgba(0, 0, 0, 0.10);
-    text-align: center;
+  border-radius: 10px;
+  background: var(--white);
+  padding: 20px;
+  box-shadow:
+    0 12.292px 18.438px -3.688px rgba(0, 0, 0, 0.1),
+    0 4.917px 7.375px -4.917px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 .engementbox h4 {
-    color: var(--black);
-    text-align: center;
-    font-family: var(--inter);
-    font-size: var(--font-22);
-    font-style: normal;
-    font-weight: 600;
-    line-height: 136%;
-    margin-top: 10px;
+  color: var(--black);
+  text-align: center;
+  font-family: var(--inter);
+  font-size: var(--font-22);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136%;
+  margin-top: 10px;
 }
 /* ------------------- */
 /* Navbar Styling */
@@ -1058,7 +1060,8 @@ footer hr {
   color: var(--blue);
 }
 .industry-nav .nav-link.active .icon-box img {
-  filter: brightness(0) saturate(100%) invert(46%) sepia(33%) saturate(2033%) hue-rotate(179deg) brightness(91%) contrast(97%);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(33%) saturate(2033%)
+    hue-rotate(179deg) brightness(91%) contrast(97%);
 }
 @keyframes pulse {
   0% {
@@ -1190,6 +1193,69 @@ footer hr {
   font-size: var(--font-18);
   font-weight: 600;
   line-height: 110%;
+}
+
+.strategic-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.strategic-card {
+  background: var(--white);
+  padding: 30px 25px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 14px 0 rgba(30, 136, 229, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.strategic-card h4 {
+  font-size: var(--font-22);
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+  line-height: 150%;
+}
+
+.strategic-card .accent-line {
+  width: 40px;
+  height: 3px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.strategic-card p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+  margin: 0;
+}
+.strategic-card:hover .accent-line {
+  width: 100%;
+}
+/* Nth-child Colors */
+.strategic-card:nth-child(1) .accent-line {
+  background: #17ad87;
+}
+
+.strategic-card:nth-child(2) .accent-line {
+  background: #1e88e5;
+}
+
+.strategic-card:nth-child(3) .accent-line {
+  background: #f2c200;
+}
+
+.strategic-card:nth-child(4) .accent-line {
+  background: #bc4923;
+}
+
+.strategic-card:nth-child(5) .accent-line {
+  background: #7c4dff;
 }
 
 /* Home Page Design End */
