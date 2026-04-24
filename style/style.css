@@ -4,6 +4,7 @@
   --cg-container: 1620px;
   --blue: #1e88e5;
   --black: #111111;
+  --dark: #000000;
   --grey: #555555;
   --white: #ffffff;
   --dark: #1a1a1a;
@@ -77,8 +78,8 @@ a {
   max-width: var(--cg-container);
   margin: 0 auto;
 }
-.py-100 {
-  padding: 100px 0px;
+.py-80 {
+  padding: 80px 0px;
 }
 h1 {
   color: var(--black);
@@ -86,7 +87,7 @@ h1 {
   font-size: var(--font-56);
   font-style: normal;
   font-weight: 800;
-  line-height: 128%;
+  line-height: 136%;
   text-transform: capitalize;
 }
 h1 span {
@@ -273,7 +274,7 @@ header.custom-header {
   display: grid;
   grid-template-columns: 546px 1fr 1fr 1fr;
   gap: 40px;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 50px;
 }
 .footer-card {
@@ -289,11 +290,21 @@ header.custom-header {
   padding: 30px;
 }
 .footer-column h4 {
-  color: var(--black);
+  color: var(--dark);
   font-family: var(--inter);
   font-size: var(--font-22);
   font-weight: 600;
-  margin-bottom: 22px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-column h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 50px;
+  bottom: -20px;
+  background-color: var(--dark);
 }
 .footer-column ul {
   display: flex;
@@ -319,6 +330,10 @@ header.custom-header {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 10px;
+}
+footer hr {
+  opacity: 1;
+  margin: 0;
 }
 .terms-condition ul {
   list-style: none;
