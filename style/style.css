@@ -10,9 +10,11 @@
   --lightblue: #e5f1fc;
   /* Font Sizes */
   --font-54: 54px;
+  --font-46: 46px;
   --font-44: 44px;
   --font-36: 36px;
   --font-26: 26px;
+  --font-24: 24px;
   --font-22: 22px;
   --font-20: 20px;
   --font-18: 18px;
@@ -532,23 +534,24 @@ footer hr {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  height: 60px;
+  height: 90px;
   width: 1px;
-  background: rgba(0, 0, 0, 0.1);
+  background: #e1e1e1;
 }
 .stat-item h2,
 .stat-item span {
-  font-size: 48px;
-  font-weight: 800;
+  font-size: var(--font-46);
+  font-weight: 700;
   color: var(--black);
   display: inline-block;
   margin: 0;
+  line-height: 120%;
 }
 .stat-item p {
   width: 100%;
-  font-size: var(--font-16);
+  font-size: var(--font-22);
   color: var(--grey);
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .comparison-grid {
@@ -568,17 +571,18 @@ footer hr {
 }
 .problem-card h3,
 .vision-card h3 {
-  font-size: 28px;
+  font-size: var(--font-36);
   font-weight: 800;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   color: var(--black);
+  line-height: 120%;
 }
 .problem-card h4,
 .vision-card h4 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--font-22);
+  font-weight: 600;
   color: var(--black);
-  line-height: 1.4;
+  line-height: 180%;
   margin-bottom: 20px;
 }
 .problem-card h4 span,
@@ -586,48 +590,64 @@ footer hr {
   color: var(--blue);
   font-weight: 700;
   display: block;
-  margin-top: 5px;
+  font-size: var(--font-24);
+  margin-bottom: 16px;
 }
 .problem-card p,
 .vision-card p {
-  font-size: 16px;
-  margin-bottom: 24px;
+  color: var(--grey);
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 12px;
 }
 .problem-card ul,
 .vision-card ul {
   list-style: none;
-  background: #fff;
-  padding: 24px;
-  border-radius: 16px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
-  margin-bottom: 30px;
+  background: var(--white);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
 }
 .problem-card ul li,
 .vision-card ul li {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16px;
+  align-items: start;
+  font-size: var(--font-20);
   color: var(--black);
-  font-weight: 500;
+  font-weight: 600;
+  position: relative;
+  padding-left: 35px;
+  line-height: 150%;
 }
-.cross-icon {
-  color: #ff4d4d;
-  font-size: 24px;
-  font-weight: 900;
+.problem-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/wrong.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.tick-icon {
-  color: #2ebf91;
-  font-size: 18px;
-  font-weight: 900;
+.vision-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 22px;
+  height: 22px;
+  background-image: url("../images/correct.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .card-footer p {
-  color: var(--grey);
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0;
+  line-height: 175%;
+  margin-bottom: 0;
 }
 /* Home Page Design End */
