@@ -6,7 +6,12 @@
   --grey: #555555;
   --white: #ffffff;
   --dark: #1a1a1a;
+  --green-light: #17AD87;
+  --yellow: #F2C200;
+  --orange: #BC4923;
+  --purple: #B007ED;
   --lightblue: #e5f1fc;
+  --light-blue-bg: #F8FCFF;
   --border-color: #DFDFDF;
   --tab-bg-color: #FFFFFA;
   --blue-ring-color: #CEE9FF;
@@ -29,6 +34,30 @@
   background-color: var(--white);
   padding: 30px;
   border-radius: 20px;
+}
+
+.gradient-card-hover {
+  position: relative;
+}
+
+.gradient-card-hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../images/common-bg-gradiant-hover.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1;
+}
+
+.common-card.gradient-card-hover:hover::before {
+  opacity: 1;
 }
 
 /* common tabs start */
@@ -86,8 +115,8 @@
   justify-content: center;
   grid-gap: 40px;
   position: sticky;
-  top: 120px;
-  z-index: 10;
+  top: 97px;
+  z-index: 2;
 }
 
 .service-sticky-list {
@@ -142,11 +171,12 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
+
 .reverse-row {
   direction: rtl;
 }
 
-.reverse-row > * {
+.reverse-row>* {
   direction: ltr;
 }
 
@@ -188,8 +218,279 @@
   grid-gap: 10px;
   margin-bottom: 50px;
 }
-.our-services .our-services-wrapper {
+
+.our-service .our-services-wrapper {
   display: flex;
+  justify-content: space-between;
   grid-gap: 40px;
 }
+
+.common-card.services-card {
+  position: relative;
+  background: var(--light-blue-bg);
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.common-card.services-card span img {
+  filter: brightness(0) invert(1);
+}
+
+.common-card.services-card .common-card-header span {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--green-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.common-card.services-card:nth-child(1) .common-card-header span {
+  background-color: var(--green-light);
+}
+
+.common-card.services-card:nth-child(2) .common-card-header span {
+  background-color: var(--blue);
+}
+
+.common-card.services-card:nth-child(3) .common-card-header span {
+  background-color: var(--yellow);
+}
+
+.common-card.services-card:nth-child(4) .common-card-header span {
+  background-color: var(--orange);
+}
+
+.common-card.services-card:nth-child(5) .common-card-header span {
+  background-color: var(--purple);
+}
+
+.common-card.services-card:hover .common-card-header span {
+  background-color: var(--white);
+}
+
+.common-card.services-card:hover .common-card-header span img {
+  filter: none;
+}
+
+.our-service .our-services-wrapper .common-card-header {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+}
+
+.our-service .content-box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  position: sticky;
+  top: 200px;
+  height: fit-content;
+  flex-basis: 600px;
+}
+
+.our-service .content-box h2 {
+  text-align: left;
+}
+
+.explore-btn {
+  color: var(--blue);
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+  width: fit-content;
+  grid-gap: 3px;
+}
+
+.our-service .service-card-list {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  flex-basis: 745px;
+}
+
 /* our services section end */
+#our-services,
+#overview {
+  scroll-margin-top: 140px;
+}
+
+/* benefits section start */
+.benefits-section .benefits-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+}
+
+.benefits-section .content-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  margin-bottom: 50px;
+}
+
+.common-card.benefits-card {
+  grid-column: span 2;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.common-card.benefits-card:nth-child(4) {
+  grid-column: 2 / span 2;
+}
+
+.common-card.benefits-card:nth-child(5) {
+  grid-column: 4 / span 2;
+}
+
+.common-card.benefits-card span {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.common-card.benefits-card:nth-child(1) span {
+  background-color: var(--blue);
+}
+
+.common-card.benefits-card:nth-child(2) span {
+  background-color: var(--yellow);
+}
+
+.common-card.benefits-card:nth-child(3) span {
+  background-color: var(--purple);
+}
+
+.common-card.benefits-card:nth-child(4) span {
+  background-color: var(--orange);
+}
+
+.common-card.benefits-card:nth-child(5) span {
+  background-color: var(--green-light);
+}
+
+.common-card.benefits-card:hover span {
+  background-color: var(--white);
+}
+
+.common-card.benefits-card:hover span img {
+  filter: none;
+}
+
+.common-card.benefits-card span img {
+  filter: brightness(0) invert(1);
+}
+
+.common-card.benefits-card h5 {
+  color: var(--black);
+  font-size: var(--font-22);
+  font-weight: 700;
+  line-height: 154%;
+  margin-bottom: 10px;
+}
+
+.common-card.benefits-card p {
+  color: var(--grey);
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.common-card.benefits-card {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* how it works section start */
+.how-it-works-section .content-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  margin-bottom: 60px;
+}
+
+.how-it-works-section .content-box p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.how-it-works-list {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-gap: 40px;
+  align-items: flex-end;
+}
+
+.how-it-works-list > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 50px;
+  text-align: right;
+}
+
+.how-it-works-list > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.how-it-works-list > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 50px;
+  text-align: left;
+}
+
+.how-it-works-list p {
+  color: var(--grey);
+  font-size: var(--font-20);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.how-it-works-list .how-it-works-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.how-it-works-list .how-it-works-img-wrapper h6 {
+  position: absolute;
+  font-size: var(--font-16);
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  pointer-events: none;
+  z-index: 2;
+  width: 100px;
+  text-align: center;
+}
+
+/* Position labels over the SVG circles (approximate based on design) */
+.label-initial { bottom: 25%; left: 15%; }
+.label-document { top: 35%; left: 10%; }
+.label-preparation { top: 15%; left: 50%; transform: translateX(-50%); }
+.label-review { top: 35%; right: 10%; }
+.label-post { bottom: 25%; right: 15%; }
+/* how it works section end */
