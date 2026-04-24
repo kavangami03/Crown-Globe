@@ -35,5 +35,40 @@ jQuery(document).ready(function () {
       clickable: true,
     },
   });
+
+  // Counter Animation Logic
+  const counters = document.querySelectorAll('.counter');
+  const speed = 200;
+
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const decimal = counter.getAttribute('data-decimal') || 0;
+    const count = +counter.innerText;
+    const inc = target / speed;
+
+    if (count < target) {
+      const nextCount = (count + inc).toFixed(decimal);
+      counter.innerText = nextCount;
+      setTimeout(() => animateCounter(counter), 1);
+    } else {
+      counter.innerText = target;
+    }
+  };
+
+  const observerOptions = {
+    threshold: 0.5,
+  };
+
+  const counterObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  counters.forEach((counter) => counterObserver.observe(counter));
 });
+
 
