@@ -15,6 +15,7 @@
   --border-color: #DFDFDF;
   --tab-bg-color: #FFFFFA;
   --blue-ring-color: #CEE9FF;
+  --blue-card-bg: #EFF6FF;
   --blue-btn-shadow: 0 12.292px 18.438px -3.688px rgba(30, 136, 229, 0.25), 0 4.917px 7.375px -4.917px rgba(30, 136, 229, 0.25);
   /* Font Sizes */
   --font-56: 56px;
@@ -321,7 +322,11 @@
 
 /* our services section end */
 #our-services,
-#overview {
+#overview,
+#our-experience,
+#how-it-works,
+#benefits,
+#how-it-works {
   scroll-margin-top: 140px;
 }
 
@@ -543,3 +548,116 @@
 }
 
 /* case study section end */
+
+/* our team section start */
+.our-team-section {
+  background: linear-gradient(180deg, #FFF 0%, #F8FCFF 100%);
+}
+
+.our-team-section .our-team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  align-items: stretch;
+}
+
+.our-team-section .content-box {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.our-team-card {
+  background-color: var(--blue-card-bg);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.our-team-card-img-box {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.our-team-card-content-box h5 {
+  color: var(--black);
+  font-size: var(--font-22);
+  font-weight: 700;
+  line-height: 154%;
+  margin-bottom: 10px;
+}
+
+.our-team-card-content-box span {
+  color: var(--grey);
+  font-size: var(--font-20);
+  text-align: center;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 20px;
+  line-height: 120%;
+}
+
+.our-team-card-content-box a {
+  display: inline-block;
+}
+
+.our-team-card-content-box a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.our-team-card-content-box a:hover img {
+  transform: scale(1.1);
+}
+
+/* faq section start */
+
+.faq-section .accordion-item {
+  border: none;
+  background-color: var(--blue-card-bg);
+  border-radius: 12px !important;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.faq-section .accordion-button {
+  font-size: var(--font-20);
+  font-weight: 600;
+  color: var(--black);
+  padding: 24px;
+  background-color: transparent;
+  line-height: normal;
+  box-shadow: none;
+}
+
+.faq-section .accordion-button:not(.collapsed) {
+  color: var(--black);
+}
+
+.faq-section .accordion-button::after {
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+}
+
+.faq-section .accordion-body {
+  padding: 0 24px 24px;  
+}
+
+.faq-section .accordion-body p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+  margin: 0;
+}
+
+/* faq section end */
