@@ -1257,5 +1257,192 @@ footer hr {
 .strategic-card:nth-child(5) .accent-line {
   background: #7c4dff;
 }
+.complete-finance-data .section-header,
+.complete-finance-data .section-header h2 {
+  text-align: start;
+  margin-bottom: 0;
+}
+.complete-finance-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+.complete-finance-left p {
+  color: var(--grey);
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.complete-finance-left p:last-child {
+  margin-bottom: 0;
+}
 
+/* Complete Finance Features Grid & Pulse Dot */
+.finance-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.finance-feature-item {
+  background: var(--white);
+  padding: 24px 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.finance-feature-item:hover {
+  background: var(--blue);
+  box-shadow: 0 15px 35px rgba(30, 136, 229, 0.4);
+}
+
+.finance-feature-item span:last-child {
+  color: var(--black);
+  font-size: var(--font-22);
+  font-weight: 700;
+  line-height: normal;
+  transition: color 0.3s ease;
+  line-height: 150%;
+}
+
+.finance-feature-item:hover span:last-child {
+  color: var(--white);
+}
+
+.finance-feature-item .pulse-dot {
+  transition: background 0.3s ease;
+}
+
+.finance-feature-item:hover .pulse-dot::after {
+  background: var(--white);
+}
+
+.finance-feature-item:hover .pulse-dot::before {
+  background: var(--white);
+}
+
+.pulse-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* The dark blue inner dot */
+.pulse-dot::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: var(--blue); /* Dark blue dot */
+  border-radius: 50%;
+  display: block;
+  z-index: 2;
+}
+
+/* The pulsing effect */
+.pulse-dot::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--blue);
+  opacity: 0.4;
+  border-radius: 50%;
+  animation: dot-glow-pulse 2s infinite;
+  z-index: 1;
+}
+
+@keyframes dot-glow-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(3.5);
+    opacity: 0;
+  }
+}
+/* Comparison Table Styling */
+.comparison-table-container {
+  margin-top: 50px;
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.comparison-table th {
+  padding: 24px 30px;
+  text-align: left;
+  font-size: var(--font-20);
+  font-weight: 700;
+  color: var(--black);
+  background: #e4f3ff; /* Brand light blue background for headers */
+  border-right: 1px solid #efefef; /* Added vertical border */
+}
+
+.comparison-table th:last-child {
+  border-right: none;
+}
+
+.comparison-table th.highlight-header {
+  background: var(--blue);
+  color: var(--white);
+  border-right: none;
+}
+
+.comparison-table td {
+  padding: 20px 30px;
+  border-bottom: 1px solid #efefef;
+  border-right: 1px solid #efefef; /* Added vertical border */
+  font-size: var(--font-18);
+  font-weight: 500;
+  vertical-align: middle;
+  color: #333;
+}
+
+.comparison-table td:last-child {
+  border-right: none;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table td img {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
+.comparison-table .capability-cell {
+  background: #f8fcff;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.comparison-table tr:hover td {
+  background-color: #fcfdfe;
+}
+
+.comparison-table tr:hover .capability-cell {
+  background-color: #f4f9ff;
+}
 /* Home Page Design End */
