@@ -10,7 +10,7 @@
     padding: 0 15px;
   }
   :root {
-    --font-56: 48px;
+    --font-54: 48px;
     --font-44: 38px;
     --font-36: 32px;
   }
@@ -34,7 +34,7 @@
     max-width: 90%;
   }
   :root {
-    --font-56: 42px;
+    --font-54: 42px;
     --font-44: 34px;
     --font-36: 28px;
     --font-26: 22px;
@@ -43,7 +43,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
   }
-  .py-100 {
+  .py-80 {
     padding: 70px 0;
   }
 
@@ -168,7 +168,7 @@
 
 @media (max-width: 767px) {
   :root {
-    --font-56: 34px;
+    --font-54: 34px;
     --font-44: 28px;
     --font-36: 24px;
     --font-26: 20px;
@@ -183,7 +183,7 @@
     text-align: center;
     gap: 15px;
   }
-  .py-100 {
+  .py-80 {
     padding: 50px 0;
   }
   .navbar-collapse {
