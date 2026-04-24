@@ -413,10 +413,84 @@
 }
 
 .common-card.benefits-card {
-  position: relative; 
+  position: relative;
   z-index: 1;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
 
-/* benefits section end */
+/* how it works section start */
+.how-it-works-section .content-box {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 15px;
+  margin-bottom: 60px;
+}
+
+.how-it-works-section .content-box p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.how-it-works-list {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-gap: 40px;
+  align-items: flex-end;
+}
+
+.how-it-works-list > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 50px;
+  text-align: right;
+}
+
+.how-it-works-list > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+  text-align: center;
+  align-items: center;
+}
+
+.how-it-works-list > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 50px;
+  text-align: left;
+}
+
+.how-it-works-list p {
+  color: var(--grey);
+  font-size: var(--font-20);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.how-it-works-list .how-it-works-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.how-it-works-list .how-it-works-img-wrapper h6 {
+  position: absolute;
+  font-size: var(--font-16);
+  font-weight: 700;
+  color: var(--white);
+  margin: 0;
+  pointer-events: none;
+  z-index: 2;
+  width: 100px;
+  text-align: center;
+}
+
+/* Position labels over the SVG circles (approximate based on design) */
+.label-initial { bottom: 25%; left: 15%; }
+.label-document { top: 35%; left: 10%; }
+.label-preparation { top: 15%; left: 50%; transform: translateX(-50%); }
+.label-review { top: 35%; right: 10%; }
+.label-post { bottom: 25%; right: 15%; }
+/* how it works section end */

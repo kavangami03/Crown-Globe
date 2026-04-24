@@ -1010,8 +1010,7 @@ footer hr {
   color: var(--blue);
 }
 .industry-nav .nav-link.active .icon-box img {
-  filter: invert(19%) sepia(92%) saturate(7482%) hue-rotate(280deg)
-    brightness(92%) contrast(110%);
+  filter: brightness(0) saturate(100%) invert(46%) sepia(33%) saturate(2033%) hue-rotate(179deg) brightness(91%) contrast(97%);
 }
 @keyframes pulse {
   0% {
