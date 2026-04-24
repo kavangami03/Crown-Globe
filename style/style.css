@@ -266,12 +266,27 @@ header.custom-header {
   transform: rotate(180deg);
 }
 /* Footer Section */
+.footer-section {
+  background-color: #f8fcff;
+}
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 546px 1fr 1fr 1fr;
   gap: 40px;
   padding-top: 100px;
   padding-bottom: 50px;
+}
+.footer-card {
+  border-radius: 20px;
+  border: 1px solid #1e88e5;
+  background: linear-gradient(
+    120deg,
+    #e4f3ff -1.34%,
+    #f9fcff 63.46%,
+    #e4f3ff 100%
+  );
+  height: fit-content;
+  padding: 30px;
 }
 .footer-column h4 {
   color: var(--black);
@@ -288,7 +303,7 @@ header.custom-header {
 }
 .footer-column ul li a {
   color: var(--grey);
-  font-size: var(--font-16);
+  font-size: var(--font-18);
   font-weight: 500;
   line-height: 150%;
   transition: all 0.3s ease;
@@ -296,22 +311,6 @@ header.custom-header {
 .footer-column ul li a:hover {
   color: var(--blue);
   padding-left: 5px;
-}
-.contact-info ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.contact-info ul li img {
-  width: 18px;
-  height: 18px;
-}
-.social-icons a img {
-  transition: all 0.3s ease;
-}
-.social-icons a:hover img {
-  opacity: 1;
-  transform: translateY(-3px);
 }
 .footer-bottom-grid {
   padding: 20px 0;
@@ -348,4 +347,58 @@ header.custom-header {
   width: 6px;
   background-color: var(--grey);
   border-radius: 50%;
+}
+.footer-contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+.footer-card p {
+  color: var(--grey);
+  font-family: var(--inter);
+  font-size: var(--font-18);
+  font-weight: 400;
+  line-height: 182%;
+  margin-top: 16px;
+}
+.footer-contact-links ul li {
+  list-style-type: none;
+}
+.footer-contact-links ul:first-of-type li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-contact-links ul:first-of-type li a {
+  color: var(--grey);
+  font-size: var(--font-18);
+  font-weight: 500;
+  line-height: 190%;
+  transition: all 0.3s ease;
+}
+.footer-contact-links ul:last-of-type {
+  display: flex;
+  gap: 6px;
+}
+.footer-contact-links ul:last-of-type li {
+  min-width: 42px;
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--blue);
+  transition: all 0.3s ease;
+}
+.footer-contact-links ul:last-of-type li img {
+  transition: all 0.3s ease;
+}
+.footer-contact-links ul:last-of-type li:hover {
+  background-color: var(--blue);
+}
+.footer-contact-links ul:last-of-type li:hover img {
+  filter: brightness(0) invert(1);
 }
