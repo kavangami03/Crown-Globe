@@ -69,6 +69,23 @@ jQuery(document).ready(function () {
   }, observerOptions);
 
   counters.forEach((counter) => counterObserver.observe(counter));
+
+  // Progress Bar Animation Logic
+  const progressBars = document.querySelectorAll('.progress-bar-fill');
+
+  const progressObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const width = bar.getAttribute('data-width');
+        bar.style.width = width + '%';
+        observer.unobserve(bar);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  progressBars.forEach((bar) => progressObserver.observe(bar));
 });
+
 
 
