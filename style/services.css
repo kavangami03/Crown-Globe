@@ -1,0 +1,20 @@
+:root {
+  --inter: "Inter";
+  --cg-container: 1620px;
+  --blue: #1e88e5;
+  --black: #111111;
+  --grey: #555555;
+  --white: #ffffff;
+  --dark: #1a1a1a;
+  --lightblue: #e5f1fc;
+  /* Font Sizes */
+  --font-56: 56px;
+  --font-44: 44px;
+  --font-36: 36px;
+  --font-26: 26px;
+  --font-22: 22px;
+  --font-20: 20px;
+  --font-18: 18px;
+  --font-16: 16px;
+  --font-14: 14px;
+}
