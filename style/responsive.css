@@ -40,8 +40,31 @@
     --font-26: 22px;
   }
   .tools-communication-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .case-study-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .case-study-left .content-box h2,
+  .case-study-left .content-box p {
+    text-align: center;
+  }
+  .case-tag {
+    display: table;
+    margin: 0 auto 20px;
+  }
+  .case-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .result-highlight {
+    grid-column: span 1;
+  }
+  .result-list {
+    flex-direction: column;
     gap: 20px;
+    text-align: center;
   }
   .risk-mitigation-wrapper {
     grid-template-columns: 1fr;
@@ -175,6 +198,13 @@
 }
 
 @media (max-width: 991px) {
+  .timeline-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .timeline-item::after {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -199,6 +229,10 @@
   }
   .navbar-collapse {
     max-width: 85%;
+  }
+  .timeline-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 

@@ -6,19 +6,21 @@
   --grey: #555555;
   --white: #ffffff;
   --dark: #1a1a1a;
-  --green-light: #17AD87;
-  --yellow: #F2C200;
-  --orange: #BC4923;
-  --purple: #B007ED;
-  --cyan-light: #00CFD9;
+  --green-light: #17ad87;
+  --yellow: #f2c200;
+  --orange: #bc4923;
+  --purple: #b007ed;
+  --cyan-light: #00cfd9;
   --lightblue: #e5f1fc;
-  --light-blue-bg: #F8FCFF;
-  --border-color: #DFDFDF;
-  --tab-bg-color: #FFFFFA;
-  --blue-ring-color: #CEE9FF;
-  --blue-card-bg: #EFF6FF;
-  --border-card-color: #DEDEDE;
-  --blue-btn-shadow: 0 12.292px 18.438px -3.688px rgba(30, 136, 229, 0.25), 0 4.917px 7.375px -4.917px rgba(30, 136, 229, 0.25);
+  --light-blue-bg: #f8fcff;
+  --border-color: #dfdfdf;
+  --tab-bg-color: #fffffa;
+  --blue-ring-color: #cee9ff;
+  --blue-card-bg: #eff6ff;
+  --border-card-color: #dedede;
+  --blue-btn-shadow:
+    0 12.292px 18.438px -3.688px rgba(30, 136, 229, 0.25),
+    0 4.917px 7.375px -4.917px rgba(30, 136, 229, 0.25);
   /* Font Sizes */
   --font-56: 56px;
   --font-52: 52px;
@@ -33,7 +35,6 @@
   --font-16: 16px;
   --font-14: 14px;
 }
-
 
 .common-card {
   background-color: var(--white);
@@ -161,7 +162,6 @@
 
 /* service sticky section end */
 
-
 /* service overview section start */
 .service-overview-section .content-box {
   text-align: center;
@@ -186,7 +186,7 @@
   direction: rtl;
 }
 
-.reverse-row>* {
+.reverse-row > * {
   direction: ltr;
 }
 
@@ -249,7 +249,13 @@
 .common-card.services-card span img {
   filter: brightness(0) invert(1);
 }
-
+.common-card-header h5 {
+  color: var(--black, #111);
+  font-family: var(--inter);
+  font-size: var(--font-22);
+  font-weight: 700;
+  line-height: 150%;
+}
 .common-card.services-card .common-card-header span {
   width: 60px;
   height: 60px;
@@ -261,26 +267,26 @@
   transition: all 0.3s ease-in-out;
 }
 
-.common-card.services-card:nth-child(6n+1) .common-card-header span {
+.common-card.services-card:nth-child(6n + 1) .common-card-header span {
   background-color: var(--green-light);
 }
 
-.common-card.services-card:nth-child(6n+2) .common-card-header span {
+.common-card.services-card:nth-child(6n + 2) .common-card-header span {
   background-color: var(--blue);
 }
 
-.common-card.services-card:nth-child(6n+3) .common-card-header span {
+.common-card.services-card:nth-child(6n + 3) .common-card-header span {
   background-color: var(--yellow);
 }
 
-.common-card.services-card:nth-child(6n+4) .common-card-header span {
+.common-card.services-card:nth-child(6n + 4) .common-card-header span {
   background-color: var(--orange);
 }
 
-.common-card.services-card:nth-child(6n+5) .common-card-header span {
+.common-card.services-card:nth-child(6n + 5) .common-card-header span {
   background-color: var(--purple);
 }
-.common-card.services-card:nth-child(6n+6) .common-card-header span {
+.common-card.services-card:nth-child(6n + 6) .common-card-header span {
   background-color: var(--cyan-light);
 }
 
@@ -450,14 +456,14 @@
   align-items: flex-end;
 }
 
-.how-it-works-list>div:nth-child(1) {
+.how-it-works-list > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   grid-gap: 50px;
   text-align: right;
 }
 
-.how-it-works-list>div:nth-child(2) {
+.how-it-works-list > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
@@ -465,7 +471,7 @@
   align-items: center;
 }
 
-.how-it-works-list>div:nth-child(3) {
+.how-it-works-list > div:nth-child(3) {
   display: flex;
   flex-direction: column;
   grid-gap: 50px;
@@ -558,7 +564,11 @@
 
 /* our team section start */
 .our-team-section {
-  background: linear-gradient(180deg, var(--white) 0%, var(--light-blue-bg) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--white) 0%,
+    var(--light-blue-bg) 100%
+  );
 }
 
 .our-team-section .our-team-grid {
@@ -838,96 +848,99 @@
 /* Themes */
 
 /* Fixed Price - Blue */
-.pricing-card:nth-child(4n+1) {
+.pricing-card:nth-child(4n + 1) {
   border-top-color: var(--blue);
 }
 
-.pricing-card:nth-child(4n+1) h2.price {
+.pricing-card:nth-child(4n + 1) h2.price {
   color: var(--blue);
 }
 
-.pricing-card:nth-child(4n+1) ul li::before {
+.pricing-card:nth-child(4n + 1) ul li::before {
   background-color: var(--blue);
 }
 
-.pricing-card:nth-child(4n+1) .pricing-btn {
+.pricing-card:nth-child(4n + 1) .pricing-btn {
   border-color: var(--blue);
   color: var(--blue);
 }
 
-.pricing-card:nth-child(4n+1) .pricing-btn:hover {
+.pricing-card:nth-child(4n + 1) .pricing-btn:hover {
   background-color: var(--blue);
   color: var(--white);
   border-color: var(--blue);
 }
 
-.pricing-card:nth-child(4n+1) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(624%) hue-rotate(174deg) brightness(88%) contrast(104%);
+.pricing-card:nth-child(4n + 1) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(624%)
+    hue-rotate(174deg) brightness(88%) contrast(104%);
 }
 
 /* Dedicated Team - Green */
-.pricing-card:nth-child(4n+2) {
+.pricing-card:nth-child(4n + 2) {
   border-top-color: var(--green-light);
 }
 
-.pricing-card:nth-child(4n+2) h2.price {
+.pricing-card:nth-child(4n + 2) h2.price {
   color: var(--green-light);
 }
 
-.pricing-card:nth-child(4n+2) ul li::before {
+.pricing-card:nth-child(4n + 2) ul li::before {
   background-color: var(--green-light);
 }
 
-.pricing-card:nth-child(4n+2) .pricing-btn {
+.pricing-card:nth-child(4n + 2) .pricing-btn {
   border-color: var(--green-light);
   color: var(--green-light);
 }
 
-.pricing-card:nth-child(4n+2) .pricing-btn:hover {
+.pricing-card:nth-child(4n + 2) .pricing-btn:hover {
   background-color: var(--green-light);
   color: var(--white);
   border-color: var(--green-light);
 }
 
-.pricing-card:nth-child(4n+2) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(49%) sepia(86%) saturate(399%) hue-rotate(114deg) brightness(94%) contrast(93%);
+.pricing-card:nth-child(4n + 2) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(86%) saturate(399%)
+    hue-rotate(114deg) brightness(94%) contrast(93%);
 }
 
 /* Hourly Model - Yellow */
-.pricing-card:nth-child(4n+3) {
+.pricing-card:nth-child(4n + 3) {
   border-top-color: var(--yellow);
 }
 
-.pricing-card:nth-child(4n+3) h2.price {
+.pricing-card:nth-child(4n + 3) h2.price {
   color: var(--yellow);
 }
 
-.pricing-card:nth-child(4n+3) ul li::before {
+.pricing-card:nth-child(4n + 3) ul li::before {
   background-color: var(--yellow);
 }
 
-.pricing-card:nth-child(4n+3) .pricing-btn {
+.pricing-card:nth-child(4n + 3) .pricing-btn {
   border-color: var(--yellow);
   color: var(--yellow);
 }
 
-.pricing-card:nth-child(4n+3) .pricing-btn:hover {
+.pricing-card:nth-child(4n + 3) .pricing-btn:hover {
   background-color: var(--yellow);
   color: var(--white);
   border-color: var(--yellow);
 }
 
-.pricing-card:nth-child(4n+3) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(38%) saturate(5000%) hue-rotate(9deg) brightness(106%) contrast(101%);
+.pricing-card:nth-child(4n + 3) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(38%) saturate(5000%)
+    hue-rotate(9deg) brightness(106%) contrast(101%);
 }
 
 /* Outcome Based - Orange/Red */
 
-.pricing-card:nth-child(4n+4) {
+.pricing-card:nth-child(4n + 4) {
   border-top-color: var(--orange);
 }
 
-.pricing-card:nth-child(4n+4) h2.price {
+.pricing-card:nth-child(4n + 4) h2.price {
   color: var(--orange);
   font-size: 42px;
 }
@@ -938,31 +951,29 @@
   margin-top: 20px;
 }
 
-.pricing-card:nth-child(4n+4) ul li::before {
+.pricing-card:nth-child(4n + 4) ul li::before {
   background-color: var(--orange);
 }
 
-.pricing-card:nth-child(4n+4) .pricing-btn {
+.pricing-card:nth-child(4n + 4) .pricing-btn {
   border-color: var(--orange);
   color: var(--orange);
 }
 
-.pricing-card:nth-child(4n+4) .pricing-btn:hover {
+.pricing-card:nth-child(4n + 4) .pricing-btn:hover {
   background-color: var(--orange);
   color: var(--white);
   border-color: var(--orange);
 }
 
-.pricing-card:nth-child(4n+4) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(666%) hue-rotate(335deg) brightness(87%) contrast(99%);
+.pricing-card:nth-child(4n + 4) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(666%)
+    hue-rotate(335deg) brightness(87%) contrast(99%);
 }
 
 .pricing-card .pricing-btn:hover img {
-  filter: brightness(0)invert(1);
+  filter: brightness(0) invert(1);
   transform: translateX(5px);
 }
-
-
-
 
 /* engagement models section end */
