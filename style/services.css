@@ -10,17 +10,21 @@
   --yellow: #F2C200;
   --orange: #BC4923;
   --purple: #B007ED;
+  --cyan-light: #00CFD9;
   --lightblue: #e5f1fc;
   --light-blue-bg: #F8FCFF;
   --border-color: #DFDFDF;
   --tab-bg-color: #FFFFFA;
   --blue-ring-color: #CEE9FF;
   --blue-card-bg: #EFF6FF;
+  --border-card-color: #DEDEDE;
   --blue-btn-shadow: 0 12.292px 18.438px -3.688px rgba(30, 136, 229, 0.25), 0 4.917px 7.375px -4.917px rgba(30, 136, 229, 0.25);
   /* Font Sizes */
   --font-56: 56px;
+  --font-52: 52px;
   --font-44: 44px;
   --font-36: 36px;
+  --font-32: 32px;
   --font-26: 26px;
   --font-24: 24px;
   --font-22: 22px;
@@ -257,24 +261,27 @@
   transition: all 0.3s ease-in-out;
 }
 
-.common-card.services-card:nth-child(1) .common-card-header span {
+.common-card.services-card:nth-child(6n+1) .common-card-header span {
   background-color: var(--green-light);
 }
 
-.common-card.services-card:nth-child(2) .common-card-header span {
+.common-card.services-card:nth-child(6n+2) .common-card-header span {
   background-color: var(--blue);
 }
 
-.common-card.services-card:nth-child(3) .common-card-header span {
+.common-card.services-card:nth-child(6n+3) .common-card-header span {
   background-color: var(--yellow);
 }
 
-.common-card.services-card:nth-child(4) .common-card-header span {
+.common-card.services-card:nth-child(6n+4) .common-card-header span {
   background-color: var(--orange);
 }
 
-.common-card.services-card:nth-child(5) .common-card-header span {
+.common-card.services-card:nth-child(6n+5) .common-card-header span {
   background-color: var(--purple);
+}
+.common-card.services-card:nth-child(6n+6) .common-card-header span {
+  background-color: var(--cyan-light);
 }
 
 .common-card.services-card:hover .common-card-header span {
@@ -551,7 +558,7 @@
 
 /* our team section start */
 .our-team-section {
-  background: linear-gradient(180deg, #FFF 0%, #F8FCFF 100%);
+  background: linear-gradient(180deg, var(--white) 0%, var(--light-blue-bg) 100%);
 }
 
 .our-team-section .our-team-grid {
@@ -650,7 +657,7 @@
 }
 
 .faq-section .accordion-body {
-  padding: 0 24px 24px;  
+  padding: 0 24px 24px;
 }
 
 .faq-section .accordion-body p {
@@ -660,4 +667,302 @@
   margin: 0;
 }
 
-/* faq section end */
+/* Industry Challenges Section */
+.industry-challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 40px;
+}
+
+.industry-challenges .common-card {
+  background-color: var(--light-blue-bg);
+  padding: 30px;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.industry-challenges .common-card h3 {
+  font-size: var(--font-22);
+  color: var(--black);
+  font-weight: 700;
+  line-height: 154%;
+}
+
+.industry-challenges .common-card p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.industry-challenges-info {
+  text-align: center;
+}
+
+.industry-challenges-info p {
+  color: var(--black);
+  font-size: var(--font-24);
+  font-weight: 500;
+  line-height: 125%;
+}
+
+.industry-challenges-info p span {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* engagement models section start */
+
+/* pricing models */
+/* Pricing Models Section */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.pricing-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 14px 0 rgba(30, 136, 229, 0.08);
+  height: 100%;
+  border-top: 4px solid transparent;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 60px rgba(30, 136, 229, 0.12);
+}
+
+.pricing-card .card-head {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--border-card-color);
+}
+
+.pricing-card .card-head h3 {
+  color: var(--black);
+  font-size: var(--font-26);
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.pricing-card .card-head h2.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  grid-gap: 10px;
+  font-size: var(--font-52);
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.pricing-card .card-head h2.price span {
+  color: var(--grey);
+  font-size: var(--font-18);
+  font-weight: 500;
+  line-height: 166%;
+}
+
+.pricing-card .card-body {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-gap: 30px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+}
+
+.pricing-card ul li {
+  color: var(--grey);
+  font-size: var(--font-20);
+  padding-left: 20px;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+}
+
+.pricing-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.pricing-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 25px;
+  border-radius: 12px;
+  font-size: var(--font-18);
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.pricing-btn img {
+  width: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Themes */
+
+/* Fixed Price - Blue */
+.pricing-card:nth-child(4n+1) {
+  border-top-color: var(--blue);
+}
+
+.pricing-card:nth-child(4n+1) h2.price {
+  color: var(--blue);
+}
+
+.pricing-card:nth-child(4n+1) ul li::before {
+  background-color: var(--blue);
+}
+
+.pricing-card:nth-child(4n+1) .pricing-btn {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.pricing-card:nth-child(4n+1) .pricing-btn:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+}
+
+.pricing-card:nth-child(4n+1) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(624%) hue-rotate(174deg) brightness(88%) contrast(104%);
+}
+
+/* Dedicated Team - Green */
+.pricing-card:nth-child(4n+2) {
+  border-top-color: var(--green-light);
+}
+
+.pricing-card:nth-child(4n+2) h2.price {
+  color: var(--green-light);
+}
+
+.pricing-card:nth-child(4n+2) ul li::before {
+  background-color: var(--green-light);
+}
+
+.pricing-card:nth-child(4n+2) .pricing-btn {
+  border-color: var(--green-light);
+  color: var(--green-light);
+}
+
+.pricing-card:nth-child(4n+2) .pricing-btn:hover {
+  background-color: var(--green-light);
+  color: var(--white);
+  border-color: var(--green-light);
+}
+
+.pricing-card:nth-child(4n+2) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(49%) sepia(86%) saturate(399%) hue-rotate(114deg) brightness(94%) contrast(93%);
+}
+
+/* Hourly Model - Yellow */
+.pricing-card:nth-child(4n+3) {
+  border-top-color: var(--yellow);
+}
+
+.pricing-card:nth-child(4n+3) h2.price {
+  color: var(--yellow);
+}
+
+.pricing-card:nth-child(4n+3) ul li::before {
+  background-color: var(--yellow);
+}
+
+.pricing-card:nth-child(4n+3) .pricing-btn {
+  border-color: var(--yellow);
+  color: var(--yellow);
+}
+
+.pricing-card:nth-child(4n+3) .pricing-btn:hover {
+  background-color: var(--yellow);
+  color: var(--white);
+  border-color: var(--yellow);
+}
+
+.pricing-card:nth-child(4n+3) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(80%) sepia(38%) saturate(5000%) hue-rotate(9deg) brightness(106%) contrast(101%);
+}
+
+/* Outcome Based - Orange/Red */
+
+.pricing-card:nth-child(4n+4) {
+  border-top-color: var(--orange);
+}
+
+.pricing-card:nth-child(4n+4) h2.price {
+  color: var(--orange);
+  font-size: 42px;
+}
+
+.pricing-card:nth-child(4) h2.price {
+  font-size: var(--font-32);
+  line-height: 100%;
+  margin-top: 20px;
+}
+
+.pricing-card:nth-child(4n+4) ul li::before {
+  background-color: var(--orange);
+}
+
+.pricing-card:nth-child(4n+4) .pricing-btn {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.pricing-card:nth-child(4n+4) .pricing-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  border-color: var(--orange);
+}
+
+.pricing-card:nth-child(4n+4) .pricing-btn img {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(666%) hue-rotate(335deg) brightness(87%) contrast(99%);
+}
+
+.pricing-card .pricing-btn:hover img {
+  filter: brightness(0)invert(1);
+  transform: translateX(5px);
+}
+
+
+
+
+/* engagement models section end */

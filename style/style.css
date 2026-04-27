@@ -1278,24 +1278,27 @@ footer hr {
   width: 100%;
 }
 /* Nth-child Colors */
-.strategic-card:nth-child(1) .accent-line {
+.strategic-card:nth-child(6n+1) .accent-line {
   background: #17ad87;
 }
 
-.strategic-card:nth-child(2) .accent-line {
+.strategic-card:nth-child(6n+2) .accent-line {
   background: #1e88e5;
 }
 
-.strategic-card:nth-child(3) .accent-line {
+.strategic-card:nth-child(6n+3) .accent-line {
   background: #f2c200;
 }
 
-.strategic-card:nth-child(4) .accent-line {
+.strategic-card:nth-child(6n+4) .accent-line {
   background: #bc4923;
 }
 
-.strategic-card:nth-child(5) .accent-line {
+.strategic-card:nth-child(6n+5) .accent-line {
   background: #7c4dff;
+}
+.strategic-card:nth-child(6n+6) .accent-line {
+  background: #00CFD9;
 }
 .complete-finance-data .section-header,
 .complete-finance-data .section-header h2 {
