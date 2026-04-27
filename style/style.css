@@ -277,6 +277,10 @@ a.common-btn-white:active {
 }
 
 /* ------------------- */
+section[id] {
+  scroll-margin-top: 120px;
+}
+/* Base Styles End */
 /* Navbar Styling */
 .navbar-nav .nav-link {
   color: var(--black);
