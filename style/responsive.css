@@ -39,6 +39,17 @@
     --font-36: 28px;
     --font-26: 22px;
   }
+  .tools-communication-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .risk-mitigation-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .risk-mitigation-left h2 {
+    text-align: center;
+  }
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;

@@ -204,6 +204,7 @@ a.common-btn-white {
   box-shadow: 0 8px 15px -3px rgba(0, 0, 0, 0.05);
   transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
   z-index: 1;
+  background-color: var(--white);
 }
 a.common-btn-white:hover {
   background: var(--blue);
@@ -274,6 +275,7 @@ a.common-btn-white:active {
   line-height: 136%;
   margin-top: 10px;
 }
+
 /* ------------------- */
 /* Navbar Styling */
 .navbar-nav .nav-link {
@@ -722,7 +724,9 @@ footer hr {
   font-weight: 600;
   margin-bottom: 10px;
 }
-
+.section-header p {
+  margin-top: 10px;
+}
 .deliver-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1025,8 +1029,8 @@ footer hr {
 
 .industry-nav .nav-link {
   background: var(--white);
-  border-radius: 10px;
-  padding: 15px 25px;
+  border-radius: 12px;
+  padding: 10px;
   display: flex;
   align-items: center;
   gap: 18px;
@@ -1049,7 +1053,21 @@ footer hr {
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
-
+.industry-nav .nav-link:nth-child(1) .icon-box {
+  background-color: #f1fffa;
+}
+.industry-nav .nav-link:nth-child(2) .icon-box {
+  background-color: #f4faff;
+}
+.industry-nav .nav-link:nth-child(3) .icon-box {
+  background-color: #fffdf4;
+}
+.industry-nav .nav-link:nth-child(4) .icon-box {
+  background-color: #fff7f5;
+}
+.industry-nav .nav-link:nth-child(5) .icon-box {
+  background-color: #fcf5ff;
+}
 .industry-nav .nav-link.active {
   background: var(--blue);
   color: var(--white);
@@ -1088,7 +1106,7 @@ footer hr {
 }
 
 .content-header {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 .content-icon {
@@ -1178,10 +1196,10 @@ footer hr {
   gap: 16px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
-
-.benefit-item .dot {
-  width: 10px;
-  height: 10px;
+.benefit-item .dot,
+.risk-item .dot {
+  min-width: 10px;
+  min-height: 10px;
   background: var(--pulse-color, #17ad87);
   border-radius: 50%;
   animation: pulse 2s infinite;
@@ -1192,9 +1210,31 @@ footer hr {
   color: var(--black);
   font-size: var(--font-18);
   font-weight: 600;
-  line-height: 110%;
+  line-height: 130%;
 }
-
+.out-come-card {
+  background-color: var(--white);
+  padding: 10px 16px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+.out-come-card h4 {
+  color: var(--blue);
+  font-size: var(--font-20);
+  font-weight: 600;
+  line-height: 120%;
+  margin-bottom: 6px;
+}
+.out-come-card p {
+  margin-bottom: 0;
+}
+.out-come-card p b {
+  margin-bottom: 0;
+  color: var(--black);
+  font-size: var(--font-18);
+  font-weight: 600;
+  line-height: 133.333%;
+}
 .strategic-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -1450,6 +1490,304 @@ footer hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.engagement-grid{
-  grid-template-columns: repeat(4,1fr);
+.engagement-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
+/* Transition Page Design Start */
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+.overview .content-box {
+  margin-bottom: 50px;
+}
+.overview p {
+  text-align: center;
+  line-height: 150%;
+}
+.overview-item {
+  background-color: #f8fcff;
+  padding: 10px 16px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 42px;
+  transition: all 0.3s ease;
+}
+
+.overview-item span {
+  color: var(--black);
+  font-size: var(--font-20);
+  font-weight: 600;
+  line-height: 170%;
+}
+.overview-item::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--black);
+  border-radius: 50%;
+}
+/* Process Flow Design */
+.process-flow-wrapper {
+  margin-top: 50px;
+  position: relative;
+}
+
+.process-flow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 90px;
+  align-items: center;
+}
+
+.process-step {
+  background: var(--white);
+  padding: 16px;
+  border-radius: 20px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 10px 0 rgba(30, 136, 229, 0.25);
+  position: relative;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.process-step h4 {
+  font-size: var(--font-22);
+  font-weight: 700;
+  margin-bottom: 24px;
+  position: relative;
+  line-height: 150%;
+}
+
+/* Colorful underlines using after */
+.process-step h4::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 86px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.process-step:nth-child(1) h4::after {
+  background-color: #17ad87;
+}
+.process-step:nth-child(2) h4::after {
+  background-color: #1e88e5;
+}
+.process-step:nth-child(3) h4::after {
+  background-color: #f2c200;
+}
+.process-step:nth-child(4) h4::after {
+  background-color: #bc4923;
+}
+.process-step:nth-child(5) h4::after {
+  background-color: #b007ed;
+}
+
+.process-step p {
+  padding-top: 24px;
+  color: var(--black);
+  text-align: center;
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* Dotted Arrows using after */
+.process-step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 20px;
+  background: url("../media-images/dotted-arrow.svg") no-repeat center center;
+  background-size: contain;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+/* Ensure Section */
+.ensure-section {
+  margin-top: 60px;
+}
+
+.ensure-section > span {
+  color: var(--grey);
+  text-align: center;
+  font-size: var(--font-20);
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.ensure-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ensure-item {
+  border-radius: 10px;
+  background: #f4faff;
+  padding: 14px;
+  box-shadow: 0 4px 14px 0 rgba(30, 136, 229, 0.08);
+  min-width: 260px;
+}
+.ensure-item span {
+  color: var(--black);
+  font-size: var(--font-22);
+  font-weight: 600;
+}
+/* Key Benefits Design */
+.key-benefits {
+  background: linear-gradient(0deg, #fff 0%, #f8fcff 100%);
+}
+.key-benefits-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.key-benefits-left img {
+  width: 100%;
+  height: auto;
+}
+
+.key-benefits-right h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.benefits-custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits-custom-list li {
+  padding: 18px 0 18px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  font-size: var(--font-22);
+  font-weight: 500;
+  color: var(--grey);
+  line-height: 150%;
+  transition: all 0.3s ease;
+}
+
+.benefits-custom-list li::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--grey);
+  border-radius: 50%;
+}
+
+/* Tools & Communication Design */
+.tools-communication-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.tools-communication-card {
+  border-radius: 10px;
+  border: 1px solid var(--blue, #1e88e5);
+  box-shadow: 0 4px 14px 0 rgba(30, 136, 229, 0.08);
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools-communication-card span {
+  color: var(--black);
+  font-size: var(--font-20);
+  font-weight: 500;
+  line-height: 170%;
+}
+/* Risk Mitigation Design */
+.risk-mitigation-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.risk-mitigation-left h2 {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.risk-mitigation-left p {
+  font-size: var(--font-20);
+  line-height: 150%;
+  margin-bottom: 14px;
+  color: var(--grey);
+}
+
+.risk-mitigation-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.risk-item {
+  background: var(--white);
+  padding: 24px 30px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+}
+
+.risk-item span:not(.dot) {
+  font-size: var(--font-22);
+  font-weight: 600;
+  color: var(--black);
+  line-height: 130%;
+}
+.cta-section {
+  background-color: var(--blue);
+  text-align: center;
+}
+.cta-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.cta-wrapper h2 {
+  color: var(--white);
+  text-align: center;
+  font-size: var(--font-44);
+  font-weight: 800;
+  line-height: 110%;
+  margin-bottom: 20px;
+}
+.cta-wrapper p {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: var(--font-22);
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+/* Transition Page Design End */
