@@ -186,7 +186,7 @@
   direction: rtl;
 }
 
-.reverse-row > * {
+.reverse-row>* {
   direction: ltr;
 }
 
@@ -249,6 +249,7 @@
 .common-card.services-card span img {
   filter: brightness(0) invert(1);
 }
+
 .common-card-header h5 {
   color: var(--black, #111);
   font-family: var(--inter);
@@ -256,6 +257,7 @@
   font-weight: 700;
   line-height: 150%;
 }
+
 .common-card.services-card .common-card-header span {
   width: 60px;
   height: 60px;
@@ -286,6 +288,7 @@
 .common-card.services-card:nth-child(6n + 5) .common-card-header span {
   background-color: var(--purple);
 }
+
 .common-card.services-card:nth-child(6n + 6) .common-card-header span {
   background-color: var(--cyan-light);
 }
@@ -386,24 +389,28 @@
   transition: all 0.3s ease-in-out;
 }
 
-.common-card.benefits-card:nth-child(1) span {
+.common-card.benefits-card:nth-child(6n+1) span {
   background-color: var(--blue);
 }
 
-.common-card.benefits-card:nth-child(2) span {
+.common-card.benefits-card:nth-child(6n+2) span {
   background-color: var(--yellow);
 }
 
-.common-card.benefits-card:nth-child(3) span {
+.common-card.benefits-card:nth-child(6n+3) span {
   background-color: var(--purple);
 }
 
-.common-card.benefits-card:nth-child(4) span {
+.common-card.benefits-card:nth-child(6n+4) span {
   background-color: var(--orange);
 }
 
-.common-card.benefits-card:nth-child(5) span {
+.common-card.benefits-card:nth-child(6n+5) span {
   background-color: var(--green-light);
+}
+
+.common-card.benefits-card:nth-child(6n+6) span {
+  background-color: var(--cyan-light);
 }
 
 .common-card.benefits-card:hover span {
@@ -456,14 +463,14 @@
   align-items: flex-end;
 }
 
-.how-it-works-list > div:nth-child(1) {
+.how-it-works-list>div:nth-child(1) {
   display: flex;
   flex-direction: column;
   grid-gap: 50px;
   text-align: right;
 }
 
-.how-it-works-list > div:nth-child(2) {
+.how-it-works-list>div:nth-child(2) {
   display: flex;
   flex-direction: column;
   grid-gap: 30px;
@@ -471,7 +478,7 @@
   align-items: center;
 }
 
-.how-it-works-list > div:nth-child(3) {
+.how-it-works-list>div:nth-child(3) {
   display: flex;
   flex-direction: column;
   grid-gap: 50px;
@@ -564,11 +571,9 @@
 
 /* our team section start */
 .our-team-section {
-  background: linear-gradient(
-    180deg,
-    var(--white) 0%,
-    var(--light-blue-bg) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--white) 0%,
+      var(--light-blue-bg) 100%);
 }
 
 .our-team-section .our-team-grid {
@@ -872,8 +877,7 @@
 }
 
 .pricing-card:nth-child(4n + 1) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(624%)
-    hue-rotate(174deg) brightness(88%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(44%) sepia(94%) saturate(624%) hue-rotate(174deg) brightness(88%) contrast(104%);
 }
 
 /* Dedicated Team - Green */
@@ -901,8 +905,7 @@
 }
 
 .pricing-card:nth-child(4n + 2) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(49%) sepia(86%) saturate(399%)
-    hue-rotate(114deg) brightness(94%) contrast(93%);
+  filter: brightness(0) saturate(100%) invert(49%) sepia(86%) saturate(399%) hue-rotate(114deg) brightness(94%) contrast(93%);
 }
 
 /* Hourly Model - Yellow */
@@ -930,8 +933,7 @@
 }
 
 .pricing-card:nth-child(4n + 3) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(80%) sepia(38%) saturate(5000%)
-    hue-rotate(9deg) brightness(106%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(80%) sepia(38%) saturate(5000%) hue-rotate(9deg) brightness(106%) contrast(101%);
 }
 
 /* Outcome Based - Orange/Red */
@@ -967,8 +969,7 @@
 }
 
 .pricing-card:nth-child(4n + 4) .pricing-btn img {
-  filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(666%)
-    hue-rotate(335deg) brightness(87%) contrast(99%);
+  filter: brightness(0) saturate(100%) invert(35%) sepia(88%) saturate(666%) hue-rotate(335deg) brightness(87%) contrast(99%);
 }
 
 .pricing-card .pricing-btn:hover img {
@@ -977,3 +978,133 @@
 }
 
 /* engagement models section end */
+
+
+
+
+/* industry detail page styles start */
+
+.dental-booking-service-section .benefits-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.dental-booking-service-section .common-card.benefits-card {
+  grid-column: auto;
+}
+
+/* data strategy section start */
+.data-strategy-wrapper {
+  background-color: var(--light-blue-bg);
+  padding: 40px 30px;
+  border-radius: 20px;
+}
+
+.data-strategy-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.data-strategy-grid .common-card {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.data-strategy-grid .common-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(30, 136, 229, 0.1);
+}
+
+.data-strategy-grid .common-card h3 {
+  font-size: var(--font-22);
+  color: var(--black);
+  font-weight: 700;
+}
+
+.data-strategy-grid .common-card p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+}
+
+/* data strategy section end */
+
+/* industry detail page styles end */
+.common-card-header h5 {
+  color: var(--black);
+  font-size: var(--font-22);
+  font-weight: 700;
+  line-height: 150%;
+}
+
+/* industries case study section start */
+.industries-case-study-section {
+  background-color: var(--light-blue-bg);
+}
+
+.industries-case-study-section .industries-case-study-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+
+.industries-case-study-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 150px;
+  align-items: center;
+}
+
+.industries-case-study-left h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.industries-content-box h6 {
+  color: var(--blue);
+  font-size: var(--font-22);
+  line-height: 136%;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.industries-content-box p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+}
+
+.industries-case-study-right img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px 0 rgba(30, 136, 229, 0.05);
+}
+
+.quote-message-card {
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.quote-message-card p {
+  font-size: var(--font-20);
+  color: var(--black);
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 80%;
+  margin: 0 auto 20px;
+}
+
+.quote-message-card strong {
+  font-size: var(--font-20);
+  color: var(--black);
+  font-weight: 700;
+  display: block;
+}
+
+/* industries case study section end */
