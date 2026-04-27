@@ -1445,4 +1445,11 @@ footer hr {
 .comparison-table tr:hover .capability-cell {
   background-color: #f4f9ff;
 }
-/* Home Page Design End */
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.engagement-grid{
+  grid-template-columns: repeat(4,1fr);
+}
