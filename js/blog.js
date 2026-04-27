@@ -40,10 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 e.preventDefault();
                 const target = document.getElementById(id);
                 if (target) {
+                    const headerOffset = 110;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
                     window.scrollTo({
-                        top: target.offsetTop - 140, // Adjust for sticky header
+                        top: offsetPosition,
                         behavior: "smooth"
                     });
+                    
                     // Update URL without jump
                     history.pushState(null, null, `#${id}`);
                 }
