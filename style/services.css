@@ -1175,13 +1175,13 @@
 }
 
 
-.engagement-model {  
+.engagement-model {
   background-color: var(--light-blue-bg);
 }
 
 .industry-specific-benefits .industry-specific-benefits-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 972px 1fr;
   grid-gap: 25px;
 }
 
@@ -1232,6 +1232,10 @@
   position: relative;
 }
 
+.industry-specific-benefits .industry-specific-benefits-img-box img {
+  max-width: 100%;
+}
+
 .industry-specific-benefits .industry-specific-benefits-img-box p {
   text-align: center;
   max-width: 40%;
@@ -1275,6 +1279,11 @@
   .industry-specific-benefits .industry-text-box {
     grid-gap: 30px;
   }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 20px;
+    grid-gap: 30px;
+  }
 }
 
 @media (max-width: 1599px) {
@@ -1316,6 +1325,63 @@
     bottom: 41px;
     right: 4px;
   }
+
+  .industry-specific-benefits .industry-specific-benefits-grid {
+    grid-template-columns: 1fr 550px 1fr;
+  }
+
+  .industry-specific-benefits h6 {
+    font-size: 14px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 10px;
+    top: 53px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 95px;
+    top: 160px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 241px;
+    top: 203px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 93px;
+    top: 162px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 10px;
+    top: 57px;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side p:nth-of-type(2) {
+    margin-right: -90px;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side {
+    margin-top: 20px;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(2) {
+    margin-left: -90px;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: -10px;
+    grid-gap: 20px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box p {
+    max-width: 60%;
+  }
+
 }
 
 @media (max-width: 1399px) {
