@@ -642,7 +642,9 @@
 }
 
 /* faq section start */
-
+.faq-section h2 {
+  margin-bottom: 50px;
+}
 .faq-section .accordion-item {
   border: none;
   background-color: var(--blue-card-bg);
@@ -1255,6 +1257,8 @@
   top: 105px;
 }
 
+
+
 /* industries benefits section end */
 
 
@@ -1484,6 +1488,9 @@
   .faq-section .accordion-button {
     padding: 18px;
   }
+  .faq-section h2 {
+  margin-bottom: 30px;
+}
 
   .faq-section .accordion-body {
     padding: 0 18px 18px;
@@ -1568,6 +1575,7 @@
     grid-gap: 12px 18px;
     margin: 0 10px;
   }
+
 }
 
 @media (max-width: 800px) {
@@ -1626,6 +1634,9 @@
   .how-it-works-section .content-box {
     margin-bottom: 20px;
   }
+  .faq-section h2, .case-study-section h2, .benefits-section .content-box {
+  margin-bottom: 20px;
+}
 }
 
 @media (max-width: 575px) {
