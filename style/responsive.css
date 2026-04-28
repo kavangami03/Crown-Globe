@@ -100,6 +100,12 @@
   .engagementgrid {
     padding: 0 80px;
   }
+  .timeline-item:not(:last-child)::after {
+    right: -28%;
+  }
+  .cta-wrapper {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 1299px) {
@@ -375,6 +381,12 @@
   .process-step:not(:last-child)::after {
     right: -52px;
   }
+  .timeline-item:not(:last-child)::after {
+    right: -38%;
+  }
+  .case-study-main-wrapper {
+    gap: 20px;
+  }
 }
 @media (max-width: 1023px) {
   :root {
@@ -411,6 +423,21 @@
   .engagementgrid {
     padding: 0 40px;
   }
+  .timeline-grid {
+    grid-template-columns: 1fr;
+  }
+  .timeline-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 106%;
+    left: 50%;
+    transform: translate(-50%, 100%) rotate(90deg);
+    width: 50px;
+    height: 16px;
+    background: url(../images/dotted-arrow.svg) no-repeat center center;
+    background-size: contain;
+    opacity: 0.6;
+  }
 }
 @media (max-width: 991px) {
   .section-header {
@@ -439,6 +466,9 @@
     background-size: contain;
     opacity: 0.6;
     z-index: -1;
+  }
+  .case-study-main-wrapper {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -472,7 +502,12 @@
   }
   .timeline-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+  }
+  .timeline-circle {
+    margin-bottom: 30px;
+  }
+  .timeline-item:not(:last-child)::after {
+    top: 102%;
   }
   .hero-content > span,
   .hero-content p {
