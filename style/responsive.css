@@ -48,6 +48,7 @@
 @media (max-width: 1440px) {
   :root {
     --font-54: 48px;
+    --font-52: 46px;
     --font-46: 40px;
     --font-44: 38px;
     --font-36: 32px;
@@ -88,12 +89,16 @@
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
   }
-  .deliver-grid {
+  .deliver-grid,
+  .pricing-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .finance-features-grid {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+  .engagementgrid {
+    padding: 0 80px;
   }
 }
 
@@ -104,6 +109,7 @@
 
   :root {
     --font-54: 42px;
+    --font-52: 40px;
     --font-46: 36px;
     --font-44: 34px;
     --font-36: 28px;
@@ -373,6 +379,7 @@
 @media (max-width: 1023px) {
   :root {
     --font-54: 34px;
+    --font-52: 33px;
     --font-46: 30px;
     --font-44: 28px;
     --font-36: 24px;
@@ -400,6 +407,9 @@
   .risk-mitigation-wrapper {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .engagementgrid {
+    padding: 0 40px;
   }
 }
 @media (max-width: 991px) {
@@ -489,7 +499,8 @@
   .icon-box img {
     width: 24px;
   }
-  .deliver-grid {
+  .deliver-grid,
+  .pricing-grid {
     grid-template-columns: repeat(1, 1fr);
   }
   .outcome-content {
@@ -551,6 +562,20 @@
   }
   .process-step h4::after {
     bottom: -16px;
+  }
+  .engagementgrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pricing-grid {
+    margin-top: 30px;
+  }
+  .pricing-card .card-head {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .engagementgrid {
+    padding: 0 20px;
   }
 }
 
