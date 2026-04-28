@@ -685,4 +685,7 @@
   .overview-grid {
     gap: 10px;
   }
+  .solution-grid {   
+    grid-template-columns:1fr;
+  }
 }
