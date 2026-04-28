@@ -259,7 +259,7 @@ a.common-btn-white:active {
 /* Engagement Modal Our Modal Section */
 .bluegredinentbg {
   border-radius: 20px;
-  background: url(../images/bluegredinentbg.svg) no-repeat center center/cover;
+  background: url("../images/bluegredinentbg.svg") no-repeat center center/cover;
 }
 .engagementmodal h2 {
   color: var(--white);
@@ -881,10 +881,10 @@ footer hr {
   border-top-color: var(--green-light);
 }
 .deliver-card.border-yellow {
-  border-top-color: var (--yellow);
+  border-top-color: var(--yellow);
 }
 .deliver-card.border-orange {
-  border-top-color: var (--orange);
+  border-top-color: var(--orange);
 }
 
 .card-top {
@@ -962,20 +962,20 @@ footer hr {
 
 .pill-yellow {
   background: #fffdf4;
-  color: var (--yellow);
+  color: var(--yellow);
   border-color: #facb0e4d;
 }
 .pill-yellow::before {
-  background: var (--yellow);
+  background: var(--yellow);
 }
 
 .pill-orange {
   background: #fff7f5;
-  color: var (--orange);
+  color: var(--orange);
   border-color: #bc49234d;
 }
 .pill-orange::before {
-  background: var (--orange);
+  background: var(--orange);
 }
 
 .deliver-card ul {
@@ -1008,10 +1008,10 @@ footer hr {
   color: var(--green-light);
 }
 .deliver-card.border-yellow ul li::before {
-  color: var (--yellow);
+  color: var(--yellow);
 }
 .deliver-card.border-orange ul li::before {
-  color: var (--orange);
+  color: var(--orange);
 }
 
 .deliver-card .card-footer {
@@ -1100,13 +1100,13 @@ footer hr {
   background-color: var(--green-light);
 }
 .bg-orange {
-  background-color: var (--orange);
+  background-color: var(--orange);
 }
 .bg-blue-dark {
   background-color: var(--blue);
 }
 .bg-yellow {
-  background-color: var (--yellow);
+  background-color: var(--yellow);
 }
 
 .outcome-btns {
@@ -1267,14 +1267,14 @@ footer hr {
   background: #fff9e6;
 }
 .text-yellow {
-  color: var (--yellow);
+  color: var(--yellow);
 }
 
 .bg-light-orange {
   background: #fef0eb;
 }
 .text-orange {
-  color: var (--orange);
+  color: var(--orange);
 }
 
 .bg-light-purple {
@@ -1412,11 +1412,11 @@ footer hr {
 }
 
 .strategic-card:nth-child(6n + 3) .accent-line {
-  background: var (--yellow);
+  background: var(--yellow);
 }
 
 .strategic-card:nth-child(6n + 4) .accent-line {
-  background: var (--orange);
+  background: var(--orange);
 }
 
 .strategic-card:nth-child(6n + 5) .accent-line {
@@ -1712,13 +1712,13 @@ footer hr {
   background-color: #1e88e5;
 }
 .process-step:nth-child(3) h4::after {
-  background-color: var (--yellow);
+  background-color: var(--yellow);
 }
 .process-step:nth-child(4) h4::after {
-  background-color: var (--orange);
+  background-color: var(--orange);
 }
 .process-step:nth-child(5) h4::after {
-  background-color: var (--purple);
+  background-color: var(--purple);
 }
 
 .process-step p {
@@ -2020,7 +2020,7 @@ footer hr {
   transform: translateY(-50%);
   width: 70px;
   height: 30px;
-  background: url("../media-images/dotted-arrow.svg") no-repeat center center;
+  background: url("../images/dotted-arrow.svg") no-repeat center center;
   background-size: contain;
   opacity: 0.6;
 }
@@ -2029,13 +2029,13 @@ footer hr {
   --item-color: #1e88e5;
 }
 .timeline-item:nth-child(2) {
-  --item-color: var (--yellow);
+  --item-color: var(--yellow);
 }
 .timeline-item:nth-child(3) {
-  --item-color: var (--orange);
+  --item-color: var(--orange);
 }
 .timeline-item:nth-child(4) {
-  --item-color: var (--purple);
+  --item-color: var(--purple);
 }
 
 /* For Tax PAge Design End */
