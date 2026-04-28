@@ -10,12 +10,42 @@
     --font-44: 38px;
     --font-36: 32px;
   }
+
+  /* Desktop Menu Responsiveness */
+  .cg-custom-menu > ul {
+    gap: 10px;
+  }
+  .cg-custom-menu > ul > li > a {
+    font-size: 16px;
+  }
+  .cg-custom-menu > ul > li > .mega-menu {
+    gap: 30px;
+    padding: 0px 30px 24px;
+  }
+  .cg-custom-menu .mega-heading {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1250px) {
+  .cg-custom-menu > ul {
+    gap: 10px;
+  }
+  .cg-custom-menu > ul > li > a {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+  .cg-custom-menu > ul > li > .mega-menu {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
   .nav-item.dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0 !important;
+    margin-top: 0;
     opacity: 1;
     visibility: visible;
   }
@@ -25,9 +55,22 @@
     opacity: 0;
     visibility: hidden;
   }
+
+  .navbar-toggler,
+  .mobile-menu-header {
+    display: none;
+  }
+
+  .navbar-collapse {
+    display: flex;
+    visibility: visible;
+    position: static;
+    transform: none;
+    height: auto;
+  }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1299px) {
   .cg-container {
     max-width: 90%;
   }
@@ -38,50 +81,6 @@
     --font-36: 28px;
     --font-26: 22px;
   }
-
-  .tools-communication-grid {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .case-study-wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .case-study-left .content-box h2,
-  .case-study-left .content-box p {
-    text-align: center;
-  }
-
-  .case-tag {
-    display: table;
-    margin: 0 auto 20px;
-  }
-
-  .case-info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .result-highlight {
-    grid-column: span 1;
-  }
-
-  .result-list {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .risk-mitigation-wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .risk-mitigation-left h2 {
-    text-align: center;
-  }
-
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -104,10 +103,10 @@
     z-index: 1000;
     transition: all 0.5s cubic-bezier(0.85, 0, 0.15, 1);
     transform: translateY(-100%);
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     visibility: hidden;
-    max-width: 100% !important;
+    max-width: 100%;
     box-shadow: none;
   }
 
@@ -147,48 +146,123 @@
     transform: rotate(90deg);
   }
 
-  .navbar-nav {
-    text-align: left;
-    gap: 12px !important;
+  /* Custom Menu Mobile Styling */
+  .cg-custom-menu {
     overflow-y: auto;
     flex-grow: 1;
     width: 100%;
-  }
-
-  .navbar-toggler:focus {
-    box-shadow: none;
-  }
-
-  .navbar-collapse .navbar-nav {
     padding: 10px 20px;
   }
-
-  .navbar-nav .nav-link {
+  .cg-custom-menu > ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    width: 100%;
+  }
+  .cg-custom-menu > ul > li {
+    width: 100%;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .cg-custom-menu > ul > li > a {
+    width: 100%;
+    padding: 15px 0;
+    justify-content: space-between;
     font-size: 22px;
-    padding: 8px 0;
+    position: relative;
     font-weight: 700;
     color: var(--black);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
   }
-
-  .navbar-nav .dropdown-menu {
-    position: static;
-    background: transparent;
-    border: none;
-    box-shadow: none;
-    padding: 0 0 0 15px;
+  .cg-custom-menu > ul > li > a::after {
     display: none;
   }
-
-  .navbar-nav .dropdown-menu.show {
+  .cg-custom-menu > ul > li.has-mega > a::after {
     display: block;
+    content: "+";
+    font-size: 26px;
+    font-weight: 400;
+    position: static;
+    width: auto;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    background: none;
+    transform: none;
+    transition: transform 0.3s ease;
   }
-
-  .navbar-nav .dropdown-item {
+  .cg-custom-menu > ul > li.has-mega.active > a::after {
+    content: "-";
+    transform: rotate(180deg);
+  }
+  .cg-custom-menu > ul > li > .mega-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+    background: transparent;
+    display: none;
+    min-width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .cg-custom-menu .mega-column {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  .cg-custom-menu .mega-column > .inner-menu > li > a {
+    padding: 12px 20px;
     font-size: 18px;
+    font-weight: 500;
+    display: block;
+    color: var(--grey);
+  }
+  .cg-custom-menu .mega-heading {
+    font-size: 20px;
     font-weight: 600;
-    padding: 10px 0;
-    color: #666666;
+    margin-bottom: 0px;
+    padding: 12px 20px;
+    color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .cg-custom-menu .mega-heading::after {
+    display: none;
+  }
+  .cg-custom-menu .mega-column.has-inner-mega > a.mega-heading::after {
+    display: block;
+    content: "+";
+    font-size: 26px;
+    font-weight: 400;
+    position: static;
+    width: auto;
+    height: auto;
+    bottom: auto;
+    left: auto;
+    background: none;
+    transform: none;
+    transition: transform 0.3s ease;
+  }
+  .cg-custom-menu
+    .mega-column.has-inner-mega.active-inner
+    > a.mega-heading::after {
+    content: "-";
+    transform: rotate(180deg);
+  }
+  .cg-custom-menu .mega-column.has-inner-mega .inner-menu {
+    display: none;
+    padding-left: 20px;
+    padding-bottom: 15px;
+  }
+  .cg-custom-menu .mega-column.has-inner-mega .inner-menu li a {
+    padding: 8px 20px;
+    font-size: 16px;
+    color: var(--grey);
+    display: block;
   }
 
   .navbar-toggler {
@@ -220,17 +294,12 @@
   body:has(.show) {
     overflow: hidden;
   }
+  .cg-custom-menu .mega-column ul {
+    gap: 0;
+  }
 }
 
 @media (max-width: 991px) {
-  .timeline-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-  }
-
-  .timeline-item::after {
-    display: none;
-  }
 }
 
 @media (max-width: 767px) {
