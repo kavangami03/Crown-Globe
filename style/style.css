@@ -8,8 +8,23 @@
   --grey: #555555;
   --white: #ffffff;
   --lightblue: #e5f1fc;
+  --green-light: #17ad87;
+  --yellow: #f2c200;
+  --orange: #bc4923;
+  --purple: #b007ed;
+  --cyan-light: #00cfd9;
+  --light-blue-bg: #f8fcff;
+  --border-color: #dfdfdf;
+  --tab-bg-color: #fffffa;
+  --blue-ring-color: #cee9ff;
+  --blue-card-bg: #eff6ff;
+  --border-card-color: #dedede;
+  --blue-btn-shadow:
+    0 12.292px 18.438px -3.688px rgba(30, 136, 229, 0.25),
+    0 4.917px 7.375px -4.917px rgba(30, 136, 229, 0.25);
   /* Font Sizes */
   --font-54: 54px;
+  --font-52: 52px;
   --font-46: 46px;
   --font-44: 44px;
   --font-36: 36px;
@@ -863,13 +878,13 @@ footer hr {
   border-top-color: var(--blue);
 }
 .deliver-card.border-green {
-  border-top-color: #17ad87;
+  border-top-color: var(--green-light);
 }
 .deliver-card.border-yellow {
-  border-top-color: #f2c200;
+  border-top-color: var (--yellow);
 }
 .deliver-card.border-orange {
-  border-top-color: #bc4923;
+  border-top-color: var (--orange);
 }
 
 .card-top {
@@ -938,29 +953,29 @@ footer hr {
 
 .pill-green {
   background: #f1fffa;
-  color: #17ad87;
+  color: var(--green-light);
   border-color: #17ad874d;
 }
 .pill-green::before {
-  background: #17ad87;
+  background: var(--green-light);
 }
 
 .pill-yellow {
   background: #fffdf4;
-  color: #f2c200;
+  color: var (--yellow);
   border-color: #facb0e4d;
 }
 .pill-yellow::before {
-  background: #f2c200;
+  background: var (--yellow);
 }
 
 .pill-orange {
   background: #fff7f5;
-  color: #bc4923;
+  color: var (--orange);
   border-color: #bc49234d;
 }
 .pill-orange::before {
-  background: #bc4923;
+  background: var (--orange);
 }
 
 .deliver-card ul {
@@ -990,13 +1005,13 @@ footer hr {
 }
 
 .deliver-card.border-green ul li::before {
-  color: #17ad87;
+  color: var(--green-light);
 }
 .deliver-card.border-yellow ul li::before {
-  color: #f2c200;
+  color: var (--yellow);
 }
 .deliver-card.border-orange ul li::before {
-  color: #bc4923;
+  color: var (--orange);
 }
 
 .deliver-card .card-footer {
@@ -1082,16 +1097,16 @@ footer hr {
   background-color: #e5e7eb;
 }
 .bg-green {
-  background-color: #17ad87;
+  background-color: var(--green-light);
 }
 .bg-orange {
-  background-color: #bc4923;
+  background-color: var (--orange);
 }
 .bg-blue-dark {
   background-color: var(--blue);
 }
 .bg-yellow {
-  background-color: #f2c200;
+  background-color: var (--yellow);
 }
 
 .outcome-btns {
@@ -1238,11 +1253,11 @@ footer hr {
   background: #e6f7ef;
 }
 .text-green {
-  color: #17ad87;
+  color: var(--green-light);
 }
 
 .bg-light-blue {
-  background: #e5f1fc;
+  background: var(--lightblue);
 }
 .text-blue {
   color: var(--blue);
@@ -1252,14 +1267,14 @@ footer hr {
   background: #fff9e6;
 }
 .text-yellow {
-  color: #f2c200;
+  color: var (--yellow);
 }
 
 .bg-light-orange {
   background: #fef0eb;
 }
 .text-orange {
-  color: #bc4923;
+  color: var (--orange);
 }
 
 .bg-light-purple {
@@ -1311,7 +1326,7 @@ footer hr {
 .risk-item .dot {
   min-width: 10px;
   min-height: 10px;
-  background: var(--pulse-color, #17ad87);
+  background: var(--pulse-color, var(--green-light));
   border-radius: 50%;
   animation: pulse 2s infinite;
   display: block;
@@ -1389,7 +1404,7 @@ footer hr {
 }
 /* Nth-child Colors */
 .strategic-card:nth-child(6n + 1) .accent-line {
-  background: #17ad87;
+  background: var(--green-light);
 }
 
 .strategic-card:nth-child(6n + 2) .accent-line {
@@ -1397,18 +1412,18 @@ footer hr {
 }
 
 .strategic-card:nth-child(6n + 3) .accent-line {
-  background: #f2c200;
+  background: var (--yellow);
 }
 
 .strategic-card:nth-child(6n + 4) .accent-line {
-  background: #bc4923;
+  background: var (--orange);
 }
 
 .strategic-card:nth-child(6n + 5) .accent-line {
   background: #7c4dff;
 }
 .strategic-card:nth-child(6n + 6) .accent-line {
-  background: #00cfd9;
+  background: var(--cyan-light);
 }
 .complete-finance-data .section-header,
 .complete-finance-data .section-header h2 {
@@ -1691,19 +1706,19 @@ footer hr {
 }
 
 .process-step:nth-child(1) h4::after {
-  background-color: #17ad87;
+  background-color: var(--green-light);
 }
 .process-step:nth-child(2) h4::after {
   background-color: #1e88e5;
 }
 .process-step:nth-child(3) h4::after {
-  background-color: #f2c200;
+  background-color: var (--yellow);
 }
 .process-step:nth-child(4) h4::after {
-  background-color: #bc4923;
+  background-color: var (--orange);
 }
 .process-step:nth-child(5) h4::after {
-  background-color: #b007ed;
+  background-color: var (--purple);
 }
 
 .process-step p {
@@ -2014,13 +2029,13 @@ footer hr {
   --item-color: #1e88e5;
 }
 .timeline-item:nth-child(2) {
-  --item-color: #f2c200;
+  --item-color: var (--yellow);
 }
 .timeline-item:nth-child(3) {
-  --item-color: #bc4923;
+  --item-color: var (--orange);
 }
 .timeline-item:nth-child(4) {
-  --item-color: #b007ed;
+  --item-color: var (--purple);
 }
 
 /* For Tax PAge Design End */
