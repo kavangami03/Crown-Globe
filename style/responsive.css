@@ -359,6 +359,16 @@
   .outcome-grid {
     grid-template-columns: 1fr 1fr;
   }
+  .key-benefits-wrapper {
+    grid-template-columns: 0.8fr 1fr;
+    gap: 30px;
+  }
+  .process-flow-grid {
+    gap: 50px;
+  }
+  .process-step:not(:last-child)::after {
+    right: -52px;
+  }
 }
 @media (max-width: 1023px) {
   :root {
@@ -387,6 +397,10 @@
     margin: 0 auto;
     grid-template-columns: 1fr;
   }
+  .risk-mitigation-wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 }
 @media (max-width: 991px) {
   .section-header {
@@ -398,6 +412,23 @@
   }
   .industry-tab-wrapper {
     grid-template-columns: 0.8fr 1fr;
+  }
+  .process-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .process-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 110%;
+    right: 0px;
+    left: 50%;
+    transform: translate(-50%, 100%) rotate(90deg);
+    width: 40px;
+    height: 10px;
+    background: url(../images/dotted-arrow.svg) no-repeat center center;
+    background-size: contain;
+    opacity: 0.6;
+    z-index: -1;
   }
 }
 
@@ -494,6 +525,33 @@
     min-width: calc(100vw - 40px);
     max-width: calc(100vw - 40px);
   }
+  .tools-communication-grid {
+    gap: 16px;
+  }
+  .key-benefits-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .key-benefits-right h2 {
+    margin-bottom: 10px;
+  }
+  .benefits-custom-list li {
+    padding: 10px 30px;
+  }
+  .risk-mitigation-left h2 {
+    margin-bottom: 16px;
+  }
+  .overview .content-box {
+    margin-bottom: 30px;
+  }
+  .process-step h4 {
+    margin-bottom: 16px;
+  }
+  .process-step p {
+    padding-top: 16px;
+  }
+  .process-step h4::after {
+    bottom: -16px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -558,6 +616,9 @@
     width: 100%;
   }
   .finance-feature-item {
+    gap: 10px;
+  }
+  .overview-grid {
     gap: 10px;
   }
 }

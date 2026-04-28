@@ -1608,7 +1608,7 @@ footer hr {
 /* Transition Page Design Start */
 .overview-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
@@ -1667,6 +1667,7 @@ footer hr {
   position: relative;
   transition: all 0.3s ease;
   z-index: 2;
+  height: 100%;
 }
 
 .process-step h4 {
@@ -1816,7 +1817,7 @@ footer hr {
 /* Tools & Communication Design */
 .tools-communication-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
 
