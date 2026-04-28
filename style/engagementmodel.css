@@ -9,6 +9,9 @@
   grid-gap: 98px;
   padding: 115px 0;
 }
+.row-grid .left-grid img {
+    width: 100%;
+}
 .right-grid p{
   margin: 20px 0 45px 0;
 }
