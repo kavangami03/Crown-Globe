@@ -356,6 +356,9 @@
   .benefits-grid {
     grid-template-columns: 1fr;
   }
+  .industries-case-study-grid {
+    gap: 50px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -438,6 +441,11 @@
     background-size: contain;
     opacity: 0.6;
   }
+  .industries-case-study-grid {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
 @media (max-width: 991px) {
   .section-header {
@@ -469,6 +477,9 @@
   }
   .case-study-main-wrapper {
     grid-template-columns: 1fr;
+  }
+  .our-service .our-services-wrapper {
+    gap: 30px;
   }
 }
 
@@ -660,7 +671,7 @@
   .vision-card,
   .deliver-card,
   .industry-content,
-  .strategic-card {
+  .strategic-card,.data-strategy-wrapper {
     padding: 20px;
   }
   .card-top,
@@ -685,7 +696,11 @@
   .overview-grid {
     gap: 10px;
   }
-  .solution-grid {   
-    grid-template-columns:1fr;
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-message-card p {
+    margin: 0;
+    max-width: 100%;
   }
 }
