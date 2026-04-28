@@ -1108,3 +1108,68 @@
 }
 
 /* industries case study section end */
+
+/* industries benefits section start */
+.industries-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.industries-benefits .common-card {
+  text-align: center;
+  padding: 30px 20px;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.industries-benefits .common-card:nth-child(5n+1):hover {
+  border-color: var(--blue);
+}
+
+.industries-benefits .common-card:nth-child(5n+2):hover {
+  border-color: var(--yellow);
+}
+
+.industries-benefits .common-card:nth-child(5n+3):hover {
+  border-color: var(--purple);
+}
+
+.industries-benefits .common-card:nth-child(5n+4):hover {
+  border-color: var(--orange);
+}
+
+.industries-benefits .common-card:nth-child(5n+5):hover {
+  border-color: var(--green-light);
+}
+
+.industries-benefits .common-card img {
+  height: 60px;
+  width: auto;
+  margin-bottom: 18px;
+}
+
+.industries-benefits .common-card h5 {
+  font-size: var(--font-22);
+  color: var(--black);
+  font-weight: 500;
+  line-height: 154%;
+}
+
+.industries-benefits .common-card p {
+  font-size: var(--font-20);
+  color: var(--grey);
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+
+.engagement-model {
+  padding: 100px 0;
+  background-color: var(--light-blue-bg);
+}
+
+/* industries benefits section end */
