@@ -518,7 +518,7 @@ main {
 
 /* Footer Section */
 .footer-section {
-  background-color: #f8fcff;
+  background-color: var(--light-blue-bg);
 }
 
 .footer-grid {
@@ -843,7 +843,7 @@ footer hr {
 }
 
 .problem-card {
-  background: #f8fcff;
+  background: var(--light-blue-bg);
 }
 
 .problem-card h3,
@@ -1245,7 +1245,7 @@ footer hr {
 }
 
 .outcome-content {
-  background-color: #f8fcff;
+  background-color: var(--light-blue-bg);
   padding: 100px;
   border-radius: 0 20px 20px 0;
 }
@@ -1765,7 +1765,7 @@ footer hr {
 }
 
 .comparison-table .capability-cell {
-  background: #f8fcff;
+  background: var(--light-blue-bg);
   color: var(--blue);
   font-weight: 600;
 }
@@ -1806,7 +1806,7 @@ footer hr {
 }
 
 .overview-item {
-  background-color: #f8fcff;
+  background-color: var(--light-blue-bg);
   padding: 10px 16px;
   border-radius: 12px;
   display: flex;
@@ -2108,7 +2108,7 @@ footer hr {
 /* Transition Page Design End */
 /* For Tax Page Design Start */
 .engagement-modal {
-  background-color: #f8fcff;
+  background-color: var(--light-blue-bg);
 }
 
 .case-study-main-wrapper {
