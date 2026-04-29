@@ -43,9 +43,119 @@
   }
 }
 
+@media (max-width: 1689px) {
+  .industry-specific-benefits .industry-text-box {
+    grid-gap: 30px;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 20px;
+    grid-gap: 30px;
+  }
+
+  .service-sticky-list li a {
+    line-height: normal;
+  }
+}
+
+@media (max-width: 1599px) {
+  .case-study-section .case-study-grid {
+    grid-gap: 80px;
+  }
+
+  .row-grid {
+    grid-gap: 50px;
+  }
+}
+
 @media (max-width: 1499px) {
   .industry-tab-wrapper {
     grid-template-columns: 1fr 2fr;
+  }
+
+  .how-it-works-list .how-it-works-img-box img {
+    width: 100%;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 48px;
+    left: 5px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 85px;
+    left: 55px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 58px;
+    left: 202px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 92px;
+    right: 56px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 41px;
+    right: 4px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-grid {
+    grid-template-columns: 1fr 550px 1fr;
+  }
+
+  .industry-specific-benefits h6 {
+    font-size: 14px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 10px;
+    top: 53px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 95px;
+    top: 160px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 241px;
+    top: 203px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 93px;
+    top: 162px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 10px;
+    top: 57px;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side p:nth-of-type(2) {
+    margin-right: -90px;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side {
+    margin-top: 20px;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(2) {
+    margin-left: -90px;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: -10px;
+    grid-gap: 20px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box p {
+    max-width: 60%;
   }
 }
 
@@ -124,6 +234,64 @@
 
   .cta-wrapper {
     max-width: 90%;
+  }
+
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 44px;
+    left: 1px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 82px;
+    left: 50px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 55px;
+    left: 192px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 87px;
+    right: 48px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 41px;
+    right: 1px;
+  }
+
+  .common-card {
+    padding: 25px;
+  }
+
+  .common-card.benefits-card span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .common-card.services-card .common-card-header span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .common-card.services-card .common-card-header span img {
+    width: 28px;
+    height: auto;
+  }
+
+  .common-card.benefits-card span img {
+    width: 28px;
+    height: auto;
+  }
+
+  .right-grid p {
+    margin: 15px 0 25px 0;
+  }
+
+  .row-grid {
+    padding: 45px 0;
   }
 }
 
@@ -403,6 +571,48 @@
   .industries-case-study-grid {
     gap: 50px;
   }
+
+  .our-service .our-services-wrapper {
+    grid-gap: 60px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6 {
+    font-size: 18px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 44px;
+    left: -7px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 77px;
+    left: 43px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 53px;
+    left: 181px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 84px;
+    right: 44px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 36px;
+    right: -3px;
+  }
+
+  .our-team-card-content-box h5 {
+    font-size: var(--font-20);
+    line-height: normal;
+  }
+
+  .our-team-card-content-box span {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -441,6 +651,158 @@
 
   .case-study-main-wrapper {
     gap: 20px;
+  }
+
+  .coman-hero-bg {
+    height: 510px;
+  }
+
+  .service-sticky-list {
+    grid-gap: 18px 30px;
+    flex-wrap: wrap;
+  }
+
+  .service-sticky-list li a {
+    padding: 10px 0;
+  }
+
+  .common-card-header h5 {
+    line-height: normal;
+  }
+
+  .benefits-section .content-box {
+    margin-bottom: 30px;
+  }
+
+  .case-study-section .case-study-grid {
+    grid-gap: 50px;
+  }
+
+  .our-team-section .our-team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-team-card-img-box img {
+    width: 100%;
+  }
+
+  .how-it-works-list {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+  }
+
+  .how-it-works-list .how-it-works-img-box img {
+    max-width: 70%;
+  }
+
+  .how-it-works-list>div:nth-child(1),
+  .how-it-works-list>div:nth-child(3) {
+    text-align: center;
+    grid-gap: 20px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 64px;
+    left: 153px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 113px;
+    left: 223px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 73px;
+    left: 407px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 119px;
+    right: 226px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 65px;
+    right: 157px;
+  }
+
+  .faq-section .accordion-button {
+    padding: 18px;
+  }
+
+  .faq-section h2:not(.accordion-header) {
+    margin-bottom: 30px;
+  }
+
+  .faq-section .accordion-body {
+    padding: 0 18px 18px;
+  }
+
+  .service-sticky-section {
+    top: 92px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side,
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side p:nth-of-type(2) {
+    margin-right: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(2) {
+    margin-left: 0;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box p {
+    max-width: 100%;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 156px;
+    top: 64px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 255px;
+    top: 190px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 428px;
+    top: 243px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 254px;
+    top: 192px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 155px;
+    top: 68px;
   }
 }
 
@@ -508,6 +870,29 @@
     flex-direction: column-reverse;
     gap: 30px;
   }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 152px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 248px;
+    top: 184px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 414px;
+    top: 236px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 245px;
+    top: 184px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 151px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -550,6 +935,152 @@
   .our-service .our-services-wrapper {
     gap: 30px;
   }
+
+  .row-grid {
+    grid-template-columns: 1fr;
+    padding: 25px 0;
+    grid-gap: 0;
+  }
+
+  .coman-hero-bg {
+    height: auto;
+  }
+
+  .row-grid .left-grid img {
+    width: 100%;
+    height: 330px;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .benefits-section .benefits-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .common-card.benefits-card {
+    grid-column: auto;
+  }
+
+  .common-card.benefits-card:nth-child(4),
+  .common-card.benefits-card:nth-child(5) {
+    grid-column: auto;
+  }
+
+  .how-it-works-list .how-it-works-img-box img {
+    max-width: 100%;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 74px;
+    left: 26px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 123px;
+    left: 98px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 83px;
+    left: 292px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 129px;
+    right: 101px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 75px;
+    right: 33px;
+  }
+
+  .overview-content-row,
+  .case-study-section .case-study-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .case-study-section h2 {
+    margin-bottom: 30px;
+  }
+
+  .service-sticky-list {
+    grid-gap: 12px 18px;
+    margin: 0 10px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box img {
+    max-width: 100%;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 26px;
+    top: 75px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 138px;
+    top: 213px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 329px;
+    top: 273px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 135px;
+    top: 212px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 24px;
+    top: 78px;
+  }
+}
+
+@media (max-width: 800px) {
+  .our-service .our-services-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .our-service .content-box {
+    position: relative;
+    top: auto;
+  }
+
+  .common-card {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 23px;
+    top: 71px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 129px;
+    top: 203px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 314px;
+    top: 262px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 127px;
+    top: 206px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 22px;
+    top: 75px;
+  }
+
+
 }
 
 @media (max-width: 767px) {
@@ -744,6 +1275,84 @@
   .map-location iframe {
     height: 500px;
   }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 8vw;
+    left: 6px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 15vw;
+    left: 10vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 11vw;
+    left: 36vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 16vw;
+    right: 10vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 8vw;
+    right: 1vw;
+  }
+
+  .service-sticky-list {
+    grid-gap: 0px 18px;
+  }
+
+  .service-sticky-list li a {
+    padding: 10px 0;
+    line-height: normal;
+  }
+
+  .how-it-works-section .content-box {
+    margin-bottom: 20px;
+  }
+
+  .faq-section h2:not(.accordion-header),
+  .case-study-section h2,
+  .benefits-section .content-box {
+    margin-bottom: 20px;
+  }
+
+  .industry-specific-benefits h6 {
+    font-size: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6 {
+    font-size: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 8px;
+    top: 52px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 89px;
+    top: 153px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    max-width: 60px;
+    left: 237px;
+    top: 193px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 85px;
+    top: 156px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 5px;
+    top: 55px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -802,7 +1411,8 @@
   .industry-content,
   .strategic-card,
   .data-strategy-wrapper,
-  .video-content,.location-card {
+  .video-content,
+  .location-card {
     padding: 20px;
   }
 
@@ -849,5 +1459,133 @@
 
   .map-location iframe {
     height: 350px;
+  }
+
+  .benefits-section .benefits-list {
+    grid-template-columns: 1fr;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6 {
+    font-size: 15px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 8vw;
+    left: -2vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 15vw;
+    left: 8vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 18vw;
+    right: 10vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 8vw;
+    right: -1vw;
+  }
+
+  .our-team-section .our-team-grid {
+    grid-gap: 12px;
+  }
+
+  .our-team-card-img-box {
+    margin-bottom: 15px;
+  }
+
+  .our-team-card-content-box span {
+    margin-bottom: 12px;
+  }
+
+  .our-team-card {
+    border-radius: 12px;
+    padding: 15px;
+  }
+
+  .our-team-section .our-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 1px;
+    top: 42px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 67px;
+    top: 126px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 192px;
+    top: 162px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 64px;
+    top: 125px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: -1px;
+    top: 46px;
+  }
+}
+
+@media (max-width: 480px) {
+  .how-it-works-list .how-it-works-img-box h6 {
+    max-width: 80px;
+    font-size: 12px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 29px;
+    left: 6px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 62px;
+    left: 44px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 64px;
+    right: 41px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 29px;
+    right: 4px;
+  }
+}
+
+@media (max-width: 389px) {
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(1) {
+    bottom: 27px;
+    left: -2px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(2) {
+    top: 50px;
+    left: 29px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(3) {
+    top: 11vw;
+    left: 34.7vw;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(4) {
+    top: 53px;
+    right: 29px;
+  }
+
+  .how-it-works-list .how-it-works-img-box h6:nth-of-type(5) {
+    bottom: 23px;
+    right: -1px;
   }
 }
