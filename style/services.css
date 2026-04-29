@@ -121,7 +121,7 @@
   justify-content: center;
   grid-gap: 40px;
   position: sticky;
-  top: 97px;
+  top: 108px;
   z-index: 2;
 }
 
@@ -129,7 +129,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  grid-gap: 40px;
+  flex-wrap: wrap;
+  grid-gap: 10px 40px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -144,6 +145,7 @@
   transition: all 0.3s ease-in-out;
   display: inline-block;
   border: none;
+  white-space: nowrap;
 }
 
 .service-sticky-list li a.active {
@@ -343,7 +345,13 @@
 #our-experience,
 #how-it-works,
 #benefits,
-#how-it-works {
+#how-it-works,
+#our-solutions,
+#industry-challenges,
+#dental-bookkeeping-services,
+#why-choose-crownglobe,
+#virtual-cfo-bi,
+#case-study {
   scroll-margin-top: 140px;
 }
 
@@ -1269,6 +1277,10 @@
   top: 105px;
 }
 
+.industry-challenges-main {
+  background-color: var(--light-blue-bg);
+}
+
 
 
 /* industries benefits section end */
@@ -1283,6 +1295,10 @@
   .industry-specific-benefits .industry-text-box.right-side {
     margin-top: 20px;
     grid-gap: 30px;
+  }
+
+  .service-sticky-list li a {
+    line-height: normal;
   }
 }
 
@@ -1579,6 +1595,93 @@
   .service-sticky-section {
     top: 92px;
   }
+
+  .industry-specific-benefits .industry-specific-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side,
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .industry-specific-benefits .industry-text-box.left-side p:nth-of-type(2) {
+    margin-right: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side {
+    margin-top: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(1) {
+    margin-left: 0;
+  }
+
+  .industry-specific-benefits .industry-text-box.right-side p:nth-of-type(2) {
+    margin-left: 0;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box p {
+    max-width: 100%;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 156px;
+    top: 64px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 255px;
+    top: 190px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 428px;
+    top: 243px;
+    max-width: 80px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 254px;
+    top: 192px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 155px;
+    top: 68px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 152px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 248px;
+    top: 184px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 414px;
+    top: 236px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 245px;
+    top: 184px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 151px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -1656,6 +1759,35 @@
     margin: 0 10px;
   }
 
+  .industry-specific-benefits .industry-specific-benefits-img-box img {
+    max-width: 100%;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 26px;
+    top: 75px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 138px;
+    top: 213px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 329px;
+    top: 273px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 135px;
+    top: 212px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 24px;
+    top: 78px;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -1671,6 +1803,31 @@
   .common-card {
     padding: 18px;
     border-radius: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 23px;
+    top: 71px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 129px;
+    top: 203px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 314px;
+    top: 262px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 127px;
+    top: 206px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 22px;
+    top: 75px;
   }
 
 
@@ -1719,6 +1876,40 @@
   .case-study-section h2,
   .benefits-section .content-box {
     margin-bottom: 20px;
+  }
+
+  .industry-specific-benefits h6 {
+    font-size: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6 {
+    font-size: 12px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 8px;
+    top: 52px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 89px;
+    top: 153px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    max-width: 60px;
+    left: 237px;
+    top: 193px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 85px;
+    top: 156px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: 5px;
+    top: 55px;
   }
 }
 
@@ -1770,6 +1961,31 @@
 
   .our-team-section .our-team-grid {
     grid-template-columns: 1fr;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(1) {
+    left: 1px;
+    top: 42px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(2) {
+    left: 67px;
+    top: 126px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(3) {
+    left: 192px;
+    top: 162px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(4) {
+    right: 64px;
+    top: 125px;
+  }
+
+  .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
+    right: -1px;
+    top: 46px;
   }
 
 }
