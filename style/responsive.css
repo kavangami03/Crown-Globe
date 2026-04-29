@@ -671,7 +671,8 @@
   .vision-card,
   .deliver-card,
   .industry-content,
-  .strategic-card,.data-strategy-wrapper {
+  .strategic-card,
+  .data-strategy-wrapper,.video-content {
     padding: 20px;
   }
   .card-top,
@@ -702,5 +703,8 @@
   .quote-message-card p {
     margin: 0;
     max-width: 100%;
+  }
+  .video-grid {
+    grid-template-columns: 1fr;
   }
 }
