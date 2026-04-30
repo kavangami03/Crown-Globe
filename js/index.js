@@ -118,6 +118,16 @@ jQuery(document).ready(function () {
       }
     }
   });
+  // Reset Mobile Menu on Open
+  // This fixes the glitch where the 'Services' tab or others might be open by default
+  jQuery('#navContent').on('show.bs.collapse', function () {
+    if (window.innerWidth <= 1299) {
+      jQuery('.cg-custom-menu > ul > li.has-mega').removeClass('active');
+      jQuery('.cg-custom-menu .mega-menu').hide();
+      jQuery('.cg-custom-menu .has-inner-mega').removeClass('active-inner');
+      jQuery('.cg-custom-menu .inner-menu').hide();
+    }
+  });
 });
 
 

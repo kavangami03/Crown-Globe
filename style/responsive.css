@@ -202,6 +202,10 @@
   .finance-feature-item {
     padding: 20px;
   }
+
+  .blog-detail-grid {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 1399px) {
@@ -808,6 +812,15 @@
   .current-openings .openings-tab-nav {
     margin-bottom: 30px;
   }
+
+  .blog-detail-grid {
+    grid-template-columns: 1fr 350px;
+  }
+
+  .sidebar-wrapper {
+    position: static;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -896,6 +909,15 @@
 
   .industry-specific-benefits .industry-specific-benefits-img-box h6:nth-of-type(5) {
     right: 151px;
+  }
+
+  .blog-detail-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sidebar-wrapper {
+    margin-bottom: 20px;
   }
 }
 
@@ -1364,6 +1386,18 @@
 
   .current-openings .opening-meta {
     grid-gap: 6px 15px;
+  }
+
+  .hero-content-centered h1 {
+    font-size: var(--font-32);
+  }
+
+  .blog-article-body h2 {
+    font-size: var(--font-26);
+  }
+
+  .blog-article-body p {
+    font-size: var(--font-16);
   }
 }
 
