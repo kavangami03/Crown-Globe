@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crown Globe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="media-images/favicon.svg" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="custom-header bg-white shadow-sm">
+        <nav class="navbar navbar-expand-xl py-0">
+            <div class="cg-container navbar-nav flex-row gap-2 align-items-center w-100">
+                <!-- Logo -->
+                <a class="navbar-brand me-0" href="index.html">
+                    <img src="media-images/logo.svg"
+                        alt="Crown Globe - Offshore Accounting and Bookkeeping Services for USA Firms" height="40"
+                        class="d-inline-block align-text-top">
+                </a>
+                <div class="d-flex gap-2xl-5 gap-3 align-items-center justify-content-end w-100">
+                    <!-- Mobile Toggle -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navigation Links -->
+                    <div class="collapse navbar-collapse justify-content-center" id="navContent">
+                        <div class="mobile-menu-header">
+                            <a href="#"><img src="media-images/logo.svg"
+                                    alt="Crown Globe - Global Accounting Intelligence" height="40"></a>
+                            <button class="navbar-toggler close-btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navContent">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <nav class="cg-custom-menu">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                                <li class="has-mega">
+                                    <a href="javascript:void(0)">How We Work</a>
+                                    <div class="mega-menu">
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="engagement-models.html">Engagement Models</a></li>
+                                                <li><a href="transition.html">Transition Process</a></li>
+                                                <li><a href="for-tax.html">For Tax Professionals CPAs</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-mega static-mega">
+                                    <a href="services.html">Services</a>
+                                    <div class="mega-menu grid-3-2">
+                                        <div class="mega-column has-inner-mega">
+                                            <a href="javascript:void(0)" class="mega-heading">Bookkeeping Services</a>
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Xero Bookkeeping</a></li>
+                                                <li><a href="#">QuickBooks Accounting</a></li>
+                                                <li><a href="#">Catch up Bookkeeping</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column has-inner-mega">
+                                            <a href="javascript:void(0)" class="mega-heading">Business Setup
+                                                Services</a>
+                                            <ul class="inner-menu">
+                                                <li><a href="#">LLC</a></li>
+                                                <li><a href="#">S-Corp.</a></li>
+                                                <li><a href="#">C-Corp.</a></li>
+                                                <li><a href="#">Foreign Company</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column has-inner-mega">
+                                            <a href="javascript:void(0)" class="mega-heading">Tax Filing</a>
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Individual Tax Filing</a></li>
+                                                <li><a href="#">Business Tax Filing</a></li>
+                                                <li><a href="#">Multistate Sales Tax Filing</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Remote Accounting</a></li>
+                                                <li><a href="#">Financial Statement Preparation</a></li>
+                                                <li><a href="#">Virtual CFO Services</a></li>
+                                                <li><a href="#">Finance Automation</a></li>
+                                                <li><a href="#">Power BI Visualization</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Payroll Processing</a></li>
+                                                <li><a href="#">Year - End Finalization & Annual Checkup Services</a>
+                                                </li>
+                                                <li><a href="#">Outsourced Accounting</a></li>
+                                                <li><a href="#">Multistate Sales Tax Filing</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-mega static-mega">
+                                    <a href="industries.html">Industry</a>
+                                    <div class="mega-menu">
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Industry Specific Bookkeeping</a></li>
+                                                <li><a href="#">Franchise Restaurant Bookkeeping</a></li>
+                                                <li><a href="#">IT & AI Companies Bookkeeping</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Gas Station & Convenience Stores</a></li>
+                                                <li><a href="#">Real-estate Agent Bookkeeping</a></li>
+                                                <li><a href="#">Hotel Bookkeeping</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Dental Bookkeeping</a></li>
+                                                <li><a href="#">Restaurant Bookkeeping</a></li>
+                                                <li><a href="#">Liquor stores Bookkeeping</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="has-mega">
+                                    <a href="javascript:void(0)">Resources</a>
+                                    <div class="mega-menu">
+                                        <div class="mega-column">
+                                            <ul class="inner-menu">
+                                                <li><a href="#">Career</a></li>
+                                                <li><a href="#">Blogs</a></li>
+                                                <li><a href="videos.html">Videos</a></li>
+                                                <li><a href="#">Brochures</a></li>
+                                                <li><a href="#">Tax Tips</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                        <div class="d-xl-none my-3 w-100 px-3">
+                            <a href="#" class="common-btn py-3 px-4 w-100 text-center">Get Free Quote</a>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action -->
+                    <div class="d-none d-lg-block">
+                        <a href="#" class="common-btn py-3 px-4">Get Free Quote</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero section -->
+        <section>
+            <div class="coman-hero-bg" style="
+            background: url(media-images/gredianthero.svg) no-repeat center
+              center/cover;
+          ">
+                <div class="cg-container">
+                    <div class="row-grid">
+                        <div class="left-grid">
+                            <img src="media-images/carrier-hero-banner.svg"
+                                alt="CrownGlobe Expert Accounting Video Library" title="CrownGlobe Video Library" />
+                        </div>
+                        <div class="right-grid">
+                            <h1>Take Your <br><span>Accounting Career</span><br> to the Next Leve</h1>
+                            <p>Join a team that combines modern accounting practices with a
+                                culture of growth, precision and purpose.</p>
+                            <div class="banner-chips">
+                                <span>Ahmedabad, India</span>
+                                <span>Work from Office</span>
+                                <span>US Accounting Focus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Career Section -->
+        <section>
+            <div class="current-openings py-80">
+                <div class="cg-container">
+                    <div class="current-openings-wrap">
+                        <div class="section-header">
+                            <h2>Current Openings</h2>
+                            <p>5 Open roles across accounting and tax services</p>
+                        </div>
+
+                        <!-- Tab Buttons -->
+                        <ul class="openings-tab-nav" id="openingsTab" role="tablist">
+                            <li role="presentation">
+                                <button class="openings-tab-btn active" id="all-tab" data-bs-toggle="pill"
+                                    data-bs-target="#all-pane" type="button" role="tab"
+                                    aria-controls="all-pane" aria-selected="true">All roles</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="openings-tab-btn" id="bookkeeping-tab" data-bs-toggle="pill"
+                                    data-bs-target="#bookkeeping-pane" type="button" role="tab"
+                                    aria-controls="bookkeeping-pane" aria-selected="false">Bookkeepping</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="openings-tab-btn" id="tax-tab" data-bs-toggle="pill"
+                                    data-bs-target="#tax-pane" type="button" role="tab"
+                                    aria-controls="tax-pane" aria-selected="false">TAX</button>
+                            </li>
+                            <li role="presentation">
+                                <button class="openings-tab-btn" id="payroll-tab" data-bs-toggle="pill"
+                                    data-bs-target="#payroll-pane" type="button" role="tab"
+                                    aria-controls="payroll-pane" aria-selected="false">Payroll</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="openingsTabContent">
+
+                            <!-- All Roles -->
+                            <div class="tab-pane fade show active" id="all-pane" role="tabpanel" aria-labelledby="all-tab">
+                                <div class="openings-list">
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span>Bookkeeping</span>
+                                            <h3>Associate Bookkeeper (US)</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    3 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span class="opening-category">Tax Services</span>
+                                            <h3 class="opening-title">Associate Tax Preparer</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    2 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span class="opening-category">Payroll</span>
+                                            <h3 class="opening-title">Payroll Associate</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    1 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bookkeeping -->
+                            <div class="tab-pane fade" id="bookkeeping-pane" role="tabpanel" aria-labelledby="bookkeeping-tab">
+                                <div class="openings-list">
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span class="opening-category">Bookkeeping</span>
+                                            <h3 class="opening-title">Associate Bookkeeper (US)</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    3 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- TAX -->
+                            <div class="tab-pane fade" id="tax-pane" role="tabpanel" aria-labelledby="tax-tab">
+                                <div class="openings-list">
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span class="opening-category">Tax Services</span>
+                                            <h3 class="opening-title">Associate Tax Preparer</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    2 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Payroll -->
+                            <div class="tab-pane fade" id="payroll-pane" role="tabpanel" aria-labelledby="payroll-tab">
+                                <div class="openings-list">
+                                    <div class="opening-item">
+                                        <div class="opening-info">
+                                            <span class="opening-category">Payroll</span>
+                                            <h3 class="opening-title">Payroll Associate</h3>
+                                            <ul class="opening-meta">
+                                                <li>
+                                                    <img src="media-images/grey-user-icon.svg" alt="User icon">
+                                                    1 Openings
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/pin-location-icon.svg" alt="Map pin icon">
+                                                    Ahmedabad
+                                                </li>
+                                                <li>
+                                                    <img src="media-images/wfo-icon.svg" alt="Work from Office icon">
+                                                    Work from Office
+                                                </li>
+                                                <li>
+                                                    <span class="employment-type">Full-Time</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a href="#" class="apply-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- /tab-content -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="cg-container">
+            <div class="footer-grid pt-80">
+                <div class="footer-card">
+                    <div class="footer-logo">
+                        <img src="./media-images/logo.svg" alt="Crown Globe Logo - Corporate Finance and Tax Solutions">
+                    </div>
+                    <p>CrownGlobe is a leading provider of offshore accounting and bookkeeping services to accounting
+                        firms and businesses across the USA.
+                    </p>
+                    <div class="footer-contact-links">
+                        <ul>
+                            <li>
+                                <img src="./media-images/phone-icon.svg" alt="Contact Crown Globe via Phone">
+                                <a href="tel:8482484300">(848) 248-4300</a>
+                            </li>
+                            <li>
+                                <img src="./media-images/mail-icon.svg" alt="Email Crown Globe Support">
+                                <a href="mailto:info@crownglobe.com">info@crownglobe.com</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href=""><img src="./media-images/linkdin.svg"
+                                        alt="Connect with Crown Globe on LinkedIn"></a></li>
+                            <li><a href=""><img src="./media-images/instagram.svg"
+                                        alt="Follow Crown Globe on Instagram"></a></li>
+                            <li><a href=""><img src="./media-images/facebook.svg"
+                                        alt="Like Crown Globe on Facebook"></a></li>
+                            <li><a href=""><img src="./media-images/google.svg" alt="Find Crown Globe on Google"></a>
+                            </li>
+                            <li><a href=""><img src="./media-images/youtube.svg"
+                                        alt="Subscribe to Crown Globe on YouTube"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">How We Work</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Bookkeeping</a></li>
+                        <li><a href="#">Financial Statement Preparation</a></li>
+                        <li><a href="#">Payroll Processing</a></li>
+                        <li><a href="#">Offshore Staffing</a></li>
+                        <li><a href="#">USA CPA/Accounting Firm</a></li>
+                        <li><a href="#">Taxes</a></li>
+                        <li><a href="#">Multistate Sales Tax Filing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Download Brochures</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr style="border: 1px solid #CCCCCC;" />
+        <div class="cg-container">
+            <div class="footer-bottom-grid">
+                <div class="copyright">
+                    <p>&copy; 2026 CrownGlobe. All rights reserved.</p>
+                </div>
+                <div class="terms-condition">
+                    <ul>
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="design-by">
+                    <p>Designed & Developed by <a href="#">Softqube Technologies LLC</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
